@@ -1,0 +1,2222 @@
+# Miniblock configuration file
+#
+# To add a new miniblock, simply add a new configuration
+# section in the following format:
+# unique_block_name:
+#   name: String - Name displayed to user
+#   texture: String - end of minecraft.net texture URL, can be found at minecraft-heads.com in 
+#                     the "Other" section.
+#   block: String - bukkit Material name, to be used as part of payment in addtion to Emeralds, 
+#                   this must be exact but does not have to match the block, and must be populated 
+#                   even if not being used (use anything you like, AIR is an easy filler).
+#   block_quantity: integer - the number of blocks required as payment,  if set to 0, no blocks required
+#   enabled: boolean (true/false) -  used to disable a block
+#
+#
+# Valid example -
+# coffee_cup:
+#   name: Coffee Cup
+#   texture: 235e3ddfe8f9b5163ce7cba7154844114537a43102e0f8a7821e59c659ef2573
+#   block: AIR  # Choosing air as a filler block, it's not going to be part of payment
+#   block_quantity: 0
+#   enabled: true
+
+acacia_leaves:
+  name: Acacia Leaves
+  texture: 2d2546e0c155e1cc1e22b616a44a444429b2399cc67782ba223b25ad032bf7c9
+  block: ACACIA_LEAVES
+  block_quantity: 1
+  enabled: true
+
+acacia_log:
+  name: Acacia Log
+  texture: e6669fe2dbf78792a3e191622a8ed1f9eb803f8826c9b949d0dc15a51c59391
+  block: ACACIA_LOG
+  block_quantity: 1
+  enabled: true
+
+acacia_log_rotated:
+  name: Acacia Log Rotated
+  texture: d3b85c6ee5322fa8a513b866d11344bd21fa5ffa1accb2b06548f65480d159f9
+  block: ACACIA_LOG
+  block_quantity: 1
+  enabled: true
+
+acacia_planks:
+  name: Acacia Planks
+  texture: 629964de88bcab3f1b763552b79911ef24e75b3352f65dbda8f58f61d1ea7f
+  block: ACACIA_PLANKS
+  block_quantity: 1
+  enabled: true
+
+acacia_wood:
+  name: Acacia Wood with Bark
+  texture: 96a3bba2b7a2b4fa46945b1471777abe4599695545229e782259aed41d6
+  block: ACACIA_WOOD
+  block_quantity: 1
+  enabled: true
+
+andesite:
+  name: Andesite
+  texture: b513543a77118f8201f49b7c8b632dcfd38037ebfc601a1bc91aedc4caba
+  block: ANDESITE
+  block_quantity: 1
+  enabled: true
+
+barrel:
+  name: Barrel
+  texture: bae751770a70a008a03e1397cbc5be8ae3f782986a814f04943cf62a7121bc3f
+  block: BARREL
+  block_quantity: 1
+  enabled: true
+
+barrel_sideways:
+  name: Sideways Barrel
+  texture: c7502c6a68852ebf1087a2ed2a63f8d85898a7049d514b2c675fa0915bf47246
+  block: BARREL
+  block_quantity: 1
+  enabled: true
+
+beacon:
+  name: Beacon
+  texture: cde33c95fec1b8d988250f5f5b3a2485742439faeaa75ed506ea01d75e17f21
+  block: BEACON
+  block_quantity: 1
+  enabled: true
+
+bedrock:
+  name: Bedrock
+  texture: 36d1fabdf3e342671bd9f95f687fe263f439ddc2f1c9ea8ff15b13f1e7e48b9
+  block: BEDROCK
+  block_quantity: 1
+  enabled: true
+
+bee_hive:
+  name: Bee Hive
+  texture: b64169076dbdb87f279448d5a16ff78bb0a2b57503c218e21732dba9f7f9f55a
+  block: BEE_HIVE
+  block_quantity: 1
+  enabled: true
+
+full_bee_hive:
+  name: Full Bee Hive
+  texture: 88625b5201d95b1079b1b9edd4ced6fc7012763c0ff1d0d3281814a5e7acfe79
+  block: BEE_HIVE
+  block_quantity: 1
+  enabled: true
+
+bee_nest:
+  name: Bee Nest
+  texture: e040abe58d8bd73affc30a7d07540a6745e96cc4ccaab5f71540f4c366fd055b
+  block: BEE_NEST
+  block_quantity: 1
+  enabled: 
+    
+full_bee_nest:
+  name: Full Bee Nest
+  texture: 4052d0b09697d79c253f10a79edc2d2bfb93f4510d903f7b9f218407d159ea04
+  block: BEE_NEST
+  block_quantity: 1
+  enabled: true
+
+birch_leaves:
+  name: Birch Leaves
+  texture: b5fb423a0f89777a5a53ca2dd2a96fc302313807043fd29b0e0845a37705c898
+  block: BIRCH_LEAVES
+  block_quantity: 1
+  enabled: true
+
+birch_log:
+  name: Birch Log
+  texture: a991f3b73ebb9dec91eddc8361ca2fecf5280d2c733eda9ecb695f83d1580
+  block: BIRCH_LOG
+  block_quantity: 1
+  enabled: true
+
+birch_log_rotated:
+  name: Birch Log Rotated
+  texture: 2ca0ad8f411aa31a67bb685569b56c3676d9b4c2a3a8cad3aca3aa5ebc55bbbf
+  block: BIRCH_LOG
+  block_quantity: 1
+  enabled: true
+
+birch_planks:
+  name: Birch Planks
+  texture: 24274acf94635a873df096882a2661dcd443282db08880c7655947c4cc65d
+  block: BIRCH_PLANKS
+  block_quantity: 1
+  enabled: true
+
+birch_wood:
+  name: Birch Wood with Bark
+  texture: a221f813dacee0fef8c59f76894dbb26415478d9ddfc44c2e708a6d3b7549b
+  block: BIRCH_WOOD
+  block_quantity: 1
+  enabled: true
+
+black_concrete:
+  name: Black Concrete
+  texture: 4fc2372b457542c65483afa1442e1c33a5ff758d362ecec4348795172824d869
+  block: BLACK_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+black_concrete_powder:
+  name: Black Concrete Powder
+  texture: 2342b9bf9f1f6295842b0efb591697b14451f803a165ae58d0dcebd98eacc
+  block: BLACK_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+black_glazed_terracotta:
+  name: Black Glazed Terracotta
+  texture: ed4a321c4c3bc7cc391d45c2d304a4f526bcae5b23565a04135cef81ce5118cc
+  block: BLACK_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+black_shulker_box:
+  name: Black Shulker Box
+  texture: 6bb3197945d3d17d97e6a3f4e2f3da20bbbac84c828c89f4bea1a3866b785
+  block: BLACK_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+black_stained_glass:
+  name: Black Stained Glass
+  texture: d44c165a14eb13df6b07c85f209c79e2008e0b67ad0b16093b000ed012ccf289
+  block: BLACK_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+black_terracotta:
+  name: Black Terracotta
+  texture: e17ff8babb91b4dbad7524e58eed4b2f71565745989af9a2ccfcf3328f61bd2
+  block: BLACK_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+black_wool:
+  name: Black Wool
+  texture: 3ab0263bdd76f3e418dba5bf481b921ced397d8b8a34a5561fb7beaa46ece1
+  block: BLACK_WOOL
+  block_quantity: 1
+  enabled: true
+
+blast_furnace:
+  name: Blast Furnace
+  texture: e8306bf8ee4036a6fdb4841670b317289485031b56545d3d1a5c0e574ecfd1d4
+  block: BLAST_FURNACE
+  block_quantity: 1
+  enabled: true
+
+lit_blast_furnace:
+  name: Lit Blast Furnace
+  texture: 9fbb6eea57547b2588baf8af649d9116ff08cac56dd2140b3c49577799bad7c
+  block: BLAST_FURNACE
+  block_quantity: 1
+  enabled: true
+
+blue_concrete:
+  name: Blue Concrete
+  texture: 57c7a297103db084af6273b879805afc8577cc82c752ac266cf8d7a6eea60
+  block: BLUE_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+blue_concrete_powder:
+  name: Blue Concrete Powder
+  texture: 1da76d6ddcdbb4973332155796c030cfa2fe855ce539e813e588c61d4d6bca5c
+  block: BLUE_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+blue_glazed_terracotta:
+  name: Blue Glazed Terracotta
+  texture: 681e376322188b1e988309f99a015d949b68ffe9c9d73cb97813538d0864897e
+  block: BLUE_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+blue_ice:
+  name: Blue Ice
+  texture: 581b4f5f3d99672ab1a39f5f410bd4d4fd92548e07d17bdf0d4f1f57dcebb5cf
+  block: BLUE_ICE
+  block_quantity: 1
+  enabled: true
+
+blue_shulker_box:
+  name: Blue Shulker Box
+  texture: d61271d9a57fea5a8d38fa821e6469812a203717606a24b07b42c2a6bc73
+  block: BLUE_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+blue_stained_glass:
+  name: Blue Stained Glass
+  texture: aff2d5eec7e2621072ee9e5f9b764e89d7582774968cf679f4a6393f65701020
+  block: BLUE_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+blue_terracotta:
+  name: Blue Terracotta
+  texture: 7c116694731fbd272c1ffa4352a5359b6c3a4cb5864a74a5dbe0f665f8385c
+  block: BLUE_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+blue_wool:
+  name: Blue Wool
+  texture: 3f3e406291174d24cdf0f953f8a174a82bb3489dce8f679a443ef1aae0169061
+  block: BLUE_WOOL
+  block_quantity: 1
+  enabled: true
+
+bone_block:
+  name: Bone Block
+  texture: b8a79c512cff1a9f47319fd77efd06f673a772aa97597436b0160c409c8a2e60
+  block: BONE_BLOCK
+  block_quantity: 1
+  enabled: true
+
+bookshelf:
+  name: Bookshelf
+  texture: 7f6bf958abd78295eed6ffc293b1aa59526e80f54976829ea068337c2f5e8
+  block: BOOKSHELF
+  block_quantity: 1
+  enabled: true
+
+brain_coral_block:
+  name: Brain Coral Block
+  texture: 957dd43e8f1cd13726c0f99ac404715047d12eb42a28ffc6ae9bfb3b70d7640a
+  block: BRAIN_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+bricks:
+  name: Bricks
+  texture: ce25bc42d41149198c8c523c23920737b9cedda9a99eda53f3232f48964
+  block: BRICKS
+  block_quantity: 1
+  enabled: true
+
+brown_concrete:
+  name: Brown Concrete
+  texture: 6538120f618f2ccd3bbdc18cd5782e6382ae9ee72d05f5f86276ada54ef7ed
+  block: BROWN_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+brown_concrete_powder:
+  name: Brown Concrete Powder
+  texture: 6795f96de36341a2e9c3fab95acf8e92fde3dbc99f2166518a937cccdd6ed13b
+  block: BROWN_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+brown_glazed_terracotta:
+  name: Brown Glazed Terracotta
+  texture: ad4eaa5430272c48e081d010b4f44ab6f4ae841e38967ba606601dbc35026eca
+  block: BROWN_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+brown_mushroom_block:
+  name: Brown Mushroom Block
+  texture: fa49eca0369d1e158e539d78149acb1572949b88ba921d9ee694fea4c726b3
+  block: BROWN_MUSHROOM_BLOCK
+  block_quantity: 1
+  enabled: true
+
+brown_shulker_box:
+  name: Brown Shulker Box
+  texture: fb6ee37940cfce387ae54e884e4e66d169a6a6828461419789ecbba221fc23
+  block: BROWN_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+brown_stained_glass:
+  name: Brown Stained Glass
+  texture: 28f7418ca20ef99f472c5b395ab1c094056d8f3e59154ed6920e5150dae8b5d0
+  block: BROWN_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+brown_terracotta:
+  name: Brown Terracotta
+  texture: 54b932f117c87e11189f1c4c40cfd92be9119b1137cd610c68edd41ac58f14
+  block: BROWN_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+brown_wool:
+  name: Brown Wool
+  texture: 32e36f6a654de74583d8030177ad6e3ac6755d7435d9123e8ebdff74b2d90cb
+  block: BROWN_WOOL
+  block_quantity: 1
+  enabled: true
+
+bubble_coral_block:
+  name: Bubble Coral Block
+  texture: 13f1805edcd32b97ab2f19a03baab1f8d4dc4db8ec7a004b14eb666d09fb87f2
+  block: BUBBLE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+cactus:
+  name: Cactus
+  texture: b378d2cc4f365df7b9b391477ddaff3f6fd78597e775494d3fdb3c47936b2d
+  block: CACTUS
+  block_quantity: 1
+  enabled: true
+
+cake:
+  name: Cake
+  texture: 121d8d9ae5278e26bc4399923d25ccb9173e83748e9bad6df76314ba94369e
+  block: CAKE
+  block_quantity: 1
+  enabled: true
+
+partial_cake:
+  name: Partial Cake
+  texture: 821d6884601e4057ac73ca263aa4f79550dc4712a064af1f2c6fa191d2c2c0
+  block: CAKE
+  block_quantity: 1
+  enabled: true
+
+cartography_table:
+  name: Cartography Table
+  texture: d9097ca59334020e4c16d5ba36cb24580ee66c9c2f425a3b5654fdc47b8db6f6
+  block: CARTOGRAPHY_TABLE
+  block_quantity: 1
+  enabled: true
+
+carved_pumpkin:
+  name: Carved Pumpkin
+  texture: 63979e9639a14c3d46ce46d714d423cb159091839a762cf939716f1511fd15
+  block: CARVED_PUMPKIN
+  block_quantity: 1
+  enabled: true
+
+cauldron:
+  name: Cauldron
+  texture: 422768db6573651626552bb26442609a7279c7843cb69b8e603d2c1db645d0
+  block: CAULDRON
+  block_quantity: 1
+  enabled: true
+
+full_cauldron:
+  name: Full Cauldron
+  texture: 848a19cdf42d748b41b72fb4376ae3f63c1165d2dce0651733df263446c77ba6
+  block: CAULDRON
+  block_quantity: 1
+  enabled: true
+
+chest:
+  name: Chest
+  texture: d5c6dc2bbf51c36cfc7714585a6a5683ef2b14d47d8ff714654a893f5da622
+  block: CHEST
+  block_quantity: 1
+  enabled: true
+
+chest_minecart:
+  name: Chest Minecart
+  texture: 4ced34211fed4010a8c85724a27fa5fb205d67684b3da517b6821279c6b65d3f
+  block: CHEST_MINECART
+  block_quantity: 1
+  enabled: true
+
+chiseled_quartz_block:
+  name: Chiseled Quartz Block
+  texture: 6f0cf13cbb368af9cee1232979a14b84e6ebf22c13b1427f9316d974bce
+  block: CHISELED_QUARTZ_BLOCK
+  block_quantity: 1
+  enabled: true
+
+chiseled_red_sandstone:
+  name: Chiseled Red Sandstone
+  texture: 19dd2812d6a3b56da40dcff6a12e476ad2c0a34dfe712686ecc3144b635f4ed4
+  block: CHISELED_RED_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+chiseled_sandstone:
+  name: Chiseled Sandstone
+  texture: 6e212391d88007021be2083fd101b2d74a306511566939b3cc7f66a04cd88da3
+  block: CHISELED_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+chiseled_stone_bricks:
+  name: Chiseled Stone Bricks
+  texture: 2f2eb8249e671048df99c036811b12615fccaee56f667a502adb407cf8fe261b
+  block: CHISELED_STONE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+clay:
+  name: Clay
+  texture: 67826829eab5ad62f0c11d9faafdc9954364871160dd839e1ab5a3b213a33
+  block: CLAY
+  block_quantity: 1
+  enabled: true
+
+coal_block:
+  name: Coal Block
+  texture: f6c5ecac942c77b95ab4620df5b85e38064c974f9c5c576b843622806a4557
+  block: COAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+coal_ore:
+  name: Coal Ore
+  texture: 761c57974f102d3deb3c53d42fde909e9b39ccbc7f776e277575a02d51a1999e
+  block: COAL_ORE
+  block_quantity: 1
+  enabled: true
+
+coarse_dirt:
+  name: Coarse Dirt
+  texture: 2fa764b3c1d462f8124478ff543c7633fa19baf9913ee228513e81a3633d
+  block: COARSE_DIRT
+  block_quantity: 1
+  enabled: true
+
+cobblestone:
+  name: Cobblestone
+  texture: dc1754851e367e8beba2a6d8f7c2fede87ae793ac546b0f299d673215b293
+  block: COBBLESTONE
+  block_quantity: 1
+  enabled: true
+
+composter:
+  name: Composter
+  texture: 53cb8f61e7f6bf957a2134e96faeb0fc924137d4bff88d9518b2bf662586c92e
+  block: COMPOSTER
+  block_quantity: 1
+  enabled: true
+
+full_composter:
+  name: Full Composter
+  texture: 99203ec825554a02d8501e3358a0aaf897cb5790dcb1cf7b1934b51e2d46b3e6
+  block: COMPOSTER
+  block_quantity: 1
+  enabled: true
+
+conduit:
+  name: Conduit
+  texture: fece1607ab07bb3ee1b69f112ac01aa1549996fafc8be614f9f1ccda923ce83c
+  block: CONDUIT
+  block_quantity: 1
+  enabled: true
+
+active_conduit:
+  name: Active Conduit
+  texture: 9295a11ee619ed5761bf7a7ea190c75d2beeb7def1b155de603ff217a6c87127
+  block: CONDUIT
+  block_quantity: 1
+  enabled: true
+
+cracked_stone_bricks:
+  name: Cracked Stone Bricks
+  texture: b3cedffa96808f21378e1eca6a5728a5bc802f8c65b4a7a9cc1146de9bcc2
+  block: CRACKED_STONE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+crafting_table:
+  name: Crafting Table
+  texture: 2cdc0feb7001e2c10fd5066e501b87e3d64793092b85a50c856d962f8be92c78
+  block: CRAFTING_TABLE
+  block_quantity: 1
+  enabled: true
+
+cut_red_sandstone:
+  name: Cut Red Sandstone
+  texture: 4d3edf5948bb31c831aa8f6458f4bf367f8c72a66ed7558ba53215f5bdb95e8b
+  block: CUT_RED_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+cut_sandstone:
+  name: Cut Sandstone
+  texture: 51539dddf9ed255ece6348193cd75012c82c93aec381f05572cecf7379711b3b
+  block: CUT_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+cyan_concrete:
+  name: Cyan Concrete
+  texture: f33b51fef1d7fdf19274bb76fcedecec7a77d010cb34fe029fb794cc59aba
+  block: CYAN_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+cyan_concrete_powder:
+  name: Cyan Concrete Powder
+  texture: 481899d07ed8a5441bb3faf1e19dcc97537cbdf91c703ebf85ac31c88198fc
+  block: CYAN_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+cyan_glazed_terracotta:
+  name: Cyan Glazed Terracotta
+  texture: 17c67af8137ffdcf87358f7ab6da6d0ea98a0960995c02e4e9818016348e1f81
+  block: CYAN_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+cyan_shulker_box:
+  name: Cyan Shulker Box
+  texture: 15aeba70c3eca498336f64934451a19bec09b4beff74f99da4c7651e340b03
+  block: CYAN_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+cyan_stained_glass:
+  name: Cyan Stained Glass
+  texture: ccf6767dd34737e99bd54b695ef0683c6c6ce6a54f66ad972992bd0e48e4579b
+  block: CYAN_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+cyan_terracotta:
+  name: Cyan Terracotta
+  texture: 4463811fd0c48fcd73abcb7bbe5aa5ec6bc2809ffc5577d3f4559df30765f
+  block: CYAN_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+cyan_wool:
+  name: Cyan Wool
+  texture: 88efad74b254e57c799763dceee4511fa2f85ae9fa556eaa97d45bf67e0b6b3
+  block: CYAN_WOOL
+  block_quantity: 1
+  enabled: true
+
+dark_oak_leaves:
+  name: Dark Oak Leaves
+  texture: 14c62848ae14ba6d736921da9ac1f5d4606c1c4fe13dc843961d6bfbb330bc
+  block: DARK_OAK_LEAVES
+  block_quantity: 1
+  enabled: true
+
+dark_oak_log:
+  name: Dark Oak Log
+  texture: f77dc6e8b45adcf928f2c6139dfa2a361aa107b89c9ad35c347b677a07c79f5
+  block: DARK_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+dark_oak_log_rotated:
+  name: Dark Oak Log Rotated
+  texture: f48371f5313cddc06976e89db28ac6bc111dbf989effef32a784d5e38328295e
+  block: DARK_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+dark_oak_planks:
+  name: Dark Oak Planks
+  texture: 4fd917fd593a7ac5bdfe1fc65d320df4611da431f3ea4f34c7a19020f512
+  block: DARK_OAK_PLANKS
+  block_quantity: 1
+  enabled: true
+
+dark_oak_wood:
+  name: Dark Oak Wood
+  texture: 453ea296ff4a1b5bdfc9d7645dc69a55deb5903068c515519ec69fb2876cafdf
+  block: DARK_OAK_WOOD
+  block_quantity: 1
+  enabled: true
+
+dark_prismarine:
+  name: Dark Prismarine
+  texture: fd918598989549594446e83f33873891178da9db42f912e5272e1fb240312a
+  block: DARK_PRISMARINE
+  block_quantity: 1
+  enabled: true
+
+dead_brain_coral_block:
+  name: Dead Brain Coral Block
+  texture: e3c9f0f73ce538f864fea9ac3d8da185cd74e4eef65dc55c07ea81451e35ae9c
+  block: DEAD_BRAIN_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+dead_bubble_coral_block:
+  name: Dead Bubble Coral Block
+  texture: c6e6ac65b9f0c7aef5d8fb242753a6b2ea48eecb7a72715db49746dd8a827a09
+  block: DEAD_BUBBLE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+dead_fire_coral_block:
+  name: Dead Fire Coral Block
+  texture: 4079eac3b5bfba7a785a99ec1a9db93dd2c7486cddadd7507814b862798d2604
+  block: DEAD_FIRE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+dead_horn_coral_block:
+  name: Dead Horn Coral Block
+  texture: e3ea7645ef5853dd49f192028b0220074d820e000005e5956417977eb5b79356
+  block: DEAD_HORN_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+dead_tube_coral_block:
+  name: Dead Tube Coral Block
+  texture: 78182d4b791b2f4be57e6a3818fc8c57fcd1d1ecb7c11cb983c2ae098e6b2c23
+  block: DEAD_TUBE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+diamond_block:
+  name: Diamond Block
+  texture: 9631597dce4e4051e8d5a543641966ab54fbf25a0ed6047f11e6140d88bf48f
+  block: DIAMOND_BLOCK
+  block_quantity: 1
+  enabled: true
+
+diamond_ore:
+  name: Diamond Ore
+  texture: 11ed9abf51fe4ea84cfcb27297f1bc54cd382edf85e7bd6e75ecca2b806611
+  block: DIAMOND_ORE
+  block_quantity: 1
+  enabled: true
+
+diorite:
+  name: Diorite
+  texture: 13fa5265a336abde301a9d59af4783e82a10dad0817716ead2962ab7c6d3dff
+  block: DIORITE
+  block_quantity: 1
+  enabled: true
+
+dirt:
+  name: Dirt
+  texture: 1ab43b8c3d34f125e5a3f8b92cd43dfd14c62402c33298461d4d4d7ce2d3aea
+  block: DIRT
+  block_quantity: 1
+  enabled: true
+
+dispenser:
+  name: Dispenser
+  texture: 3c11a0d90c37eb695c8a523d8601aa1c85fad09a4d2232d04ed23ac90e4325c2
+  block: DISPENSER
+  block_quantity: 1
+  enabled: true
+
+dried_kelp_block:
+  name: Dried Kelp Block
+  texture: b805caf3d02e35e4aadc19af15e82790177f1cd7b79f4f5b88d943ac6be203a1
+  block: DRIED_KELP_BLOCK
+  block_quantity: 1
+  enabled: true
+
+dropper:
+  name: Dropper
+  texture: 25e9152efd892f60d7e0d7e53369e04779ed3111e2fb2752b6f4c26df540aedc
+  block: DROPPER
+  block_quantity: 1
+  enabled: true
+
+emerald_block:
+  name: Emerald Block
+  texture: 25ba9789087b012307dd47de38c6622d75d6bb21eb97016c49afe9d700419909
+  block: EMERALD_BLOCK
+  block_quantity: 1
+  enabled: true
+
+emerald_ore:
+  name: Emerald Ore
+  texture: 4053851527c4c9ef30a61fb067ebce957c726e1687f8b530fb4a6beeba438bd
+  block: EMERALD_ORE
+  block_quantity: 1
+  enabled: true
+
+end_crystal:
+  name: End Crystal
+  texture: 632f0a638624614c719e5ca2de4a3625afae1572a5043de2ea64abed439
+  block: END_CRYSTAL
+  block_quantity: 1
+  enabled: true
+
+end_stone:
+  name: End Stone
+  texture: 19f21f5d883316fd65a9366f32a33013182e3381dec21c17c78355d9bf4f0
+  block: END_STONE
+  block_quantity: 1
+  enabled: true
+
+end_stone_bricks:
+  name: End Stone Bricks
+  texture: 66de65d1896812681105bb3c017fb3acd3f4dd63b13b18da14d59be984a63d7
+  block: END_STONE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+ender_chest:
+  name: Ender Chest
+  texture: a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067
+  block: ENDER_CHEST
+  block_quantity: 1
+  enabled: true
+
+farmland:
+  name: Farmland
+  texture: 11530f790e972e0bcc63a54dc55532902568def8dedf2e22e759bbcbc55c0
+  block: FARMLAND
+  block_quantity: 1
+  enabled: true
+
+fire_coral_block:
+  name: Fire Coral Block
+  texture: 9fe8ded3c74eacd78412a903b904f5577850d1e20d34878fd77597ad1633bf74
+  block: FIRE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+fletching_table:
+  name: Fletching Table
+  texture: 2760776074c23ae411ed46ef324a7a07282fbfbbbc5a99fcb3f5a8c9d6b02a53
+  block: FLETCHING_TABLE
+  block_quantity: 1
+  enabled: true
+
+furnace:
+  name: Furnace
+  texture: e12ce798246addbca658ffbe1ffc057b56d4b387a7195bf959ab4c97ea3e5
+  block: FURNACE
+  block_quantity: 1
+  enabled: true
+
+furnace_lit:
+  name: Lit Furnace
+  texture: d17b8b43f8c4b5cfeb919c9f8fe93f26ceb6d2b133c2ab1eb339bd6621fd309c
+  block: FURNACE
+  block_quantity: 1
+  enabled: true
+
+furnace_minecart:
+  name: Furnace Minecart
+  texture: e079abbafb981c795a9a2f82bab3fbd9f166b8c0dbf9a1751d769beac667b6
+  block: FURNACE_MINECART
+  block_quantity: 1
+  enabled: true
+
+glass:
+  name: Glass
+  texture: d52efad1be84e0889bb2a581a5e665aa070622260fbf6c1eb8d931a1267a54ba
+  block: GLASS
+  block_quantity: 1
+  enabled: true
+
+glowstone:
+  name: Glowstone
+  texture: eeef1056d1149f493b31dac441dc3e964c7dc55d7c323fecd785ee2620abefe
+  block: GLOWSTONE
+  block_quantity: 1
+  enabled: true
+
+gold_block:
+  name: Gold Block
+  texture: 97f57e7aa8de86591bb0bc52cba30a49d931bfabbd47bbc80bdd662251392161
+  block: GOLD_BLOCK
+  block_quantity: 1
+  enabled: true
+
+gold_ore:
+  name: Gold Ore
+  texture: 73bc965d579c3c6039f0a17eb7c2e6faf538c7a5de8e60ec7a719360d0a857a9
+  block: GOLD_ORE
+  block_quantity: 1
+  enabled: true
+
+granite:
+  name: Granite
+  texture: a0285bea3c8a02db139fa8ec5cc588615a98550725f8e676c93fdbc33b6b
+  block: GRANITE
+  block_quantity: 1
+  enabled: true
+
+grass_block:
+  name: Grass Block
+  texture: 8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+  block: GRASS_BLOCK
+  block_quantity: 1
+  enabled: true
+
+grass_path:
+  name: Grass Path
+  texture: f5db312067be1d5c4f1478af3ca2f6cf8104ab4ccbff57917c8578daa15002c2
+  block: GRASS_PATH
+  block_quantity: 1
+  enabled: true
+
+gravel:
+  name: Gravel
+  texture: c754318a3376f470e481dfcd6c83a59aa690ad4b4dd7577fdad1c2ef08d8aee6
+  block: GRAVEL
+  block_quantity: 1
+  enabled: true
+
+gray_concrete:
+  name: Gray Concrete
+  texture: c06d7befc82f201f83e193767e63f81037215afd483a38d36965982ca6d0
+  block: GRAY_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+gray_concrete_powder:
+  name: Gray Concrete Powder
+  texture: 36dc6d42495817b8d4db1311115d1f5cfbede6832192b52f32d48ef7d8b5d
+  block: GRAY_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+gray_glazed_terracotta:
+  name: Gray Glazed Terracotta
+  texture: 77729562c741e9b71aeebdb364572f099c73c0256d7d8c86331d7417a803c734
+  block: GRAY_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+gray_shulker_box:
+  name: Gray Shulker Box
+  texture: 8c936378f7b1a72ac65b6a26bf846aeca1ecef1d9a15a6bcabb8822c855feba
+  block: GRAY_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+gray_stained_glass:
+  name: Gray Stained Glass
+  texture: 6aa75b65a4a5e70f7597361995345aaa472c91a4771e59bfc09cc9b9c1deafc1
+  block: GRAY_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+gray_terracotta:
+  name: Gray Terracotta
+  texture: 9efa7b5e5e63d46d14615c61bed15427d90b261c7ca5e8159c466f09561da
+  block: GRAY_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+gray_wool:
+  name: Gray Wool
+  texture: e9e6917f2fb4ea08e7132df30961d2b5c523abba19ce43f835fc14c568f4
+  block: GRAY_WOOL
+  block_quantity: 1
+  enabled: true
+
+green_concrete:
+  name: Green Concrete
+  texture: dfab7daeb8f333c7886a70ef30caf4dec4a8cd10493f23802f1516bdd23fcd
+  block: GREEN_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+green_concrete_powder:
+  name: Green Concrete Powder
+  texture: 66d53a57685f25f293c7e9c7b4418d452f6931c53a9849a0b3ca109385577
+  block: GREEN_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+green_glazed_terracotta:
+  name: Green Glazed Terracotta
+  texture: 6ce807f0a6f499ce9ccc65010faa54ed4e0ffa67cfb848cda159d3dca0a2dca5
+  block: GREEN_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+green_shulker_box:
+  name: Green Shulker Box
+  texture: 476d4c5a8a4197d86d3a1647fd3f9e6d48e0e0ab7a8ae1e9be50f67e25c
+  block: GREEN_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+green_stained_glass:
+  name: Green Stained Glass
+  texture: 9368aead2edbdc2b1be13fde7370d02c3bd76fb1b53bf451f103f80bfd23e1bb
+  block: GREEN_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+green_terracotta:
+  name: Green Terracotta
+  texture: b55d5019c8d55bcb9dc3494ccc3419757f89c3384cf3c9abec3f18831f35b0
+  block: GREEN_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+green_wool:
+  name: Green Wool
+  texture: 484684344ae098529fc941aa84e195bdca3748d69acfee2bac1332135edd98c
+  block: GREEN_WOOL
+  block_quantity: 1
+  enabled: true
+
+grindstone_ground:
+  name: Grindstone Ground
+  texture: 9529df77690830bb3e32e4275fa2e441ade330a70c35cdc8baff5da45d399f09
+  block: GRINDSTONE
+  block_quantity: 1
+  enabled: true
+
+grindstone_wall:
+  name: Grindstone Wall
+  texture: f1892f2b3d36bc7489b6e2ba2da51ec3cb16d6647799baf7311006f89a982c40
+  block: GRINDSTONE
+  block_quantity: 1
+  enabled: true
+
+grindstone_ceiling:
+  name: Grindstone Ceiling
+  texture: f4cfe13dff14b9307d4736b32efa37e4432111d76e13edbf0ecabf095a829f10
+  block: GRINDSTONE
+  block_quantity: 1
+  enabled: true
+
+hay_block:
+  name: Hay Block
+  texture: 51ac5c4ef7501ab1eb9a2789ad6e65acdf6a27318d8de5356fe2475173a618f
+  block: HAY_BLOCK
+  block_quantity: 1
+  enabled: true
+
+honey_block:
+  name: Honey Block
+  texture: 5b7b14f3c78785c1fd244255e05d537d6c551207262a60c38125c01f663a075e
+  block: HONEY_BLOCK
+  block_quantity: 1
+  enabled: true
+
+honeycomb_block:
+  name: Honeycomb Block
+  texture: 2c680149ad17e46fbbf7606b284cc83a03b1a67cd8a52717b44bfa3ad5914f14
+  block: HONEYCOMB_BLOCK
+  block_quantity: 1
+  enabled: true
+
+horn_coral_block:
+  name: Horn Coral Block
+  texture: 3491b6e6ae9451c47e09bf1ff23d50fff87ba5927a51f46ffedf926c5cbde77f
+  block: HORN_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+ice:
+  name: Ice
+  texture: a2644071b6c7bbae7b5e45d9f82f96ffb5ee8e177a23b825a4465607f1c9c
+  block: ICE
+  block_quantity: 1
+  enabled: true
+
+iron_block:
+  name: Iron Block
+  texture: 6fc5e286d9c1d19d6d6059d69b33139f18ce69faeff0fee894d04e93e7cb9867
+  block: IRON_BLOCK
+  block_quantity: 1
+  enabled: true
+
+iron_ore:
+  name: Iron Ore
+  texture: 101843ec43f088c963ffc3e2f71c66e3155943b177a1a35982b120f6f64822bc
+  block: IRON_ORE
+  block_quantity: 1
+  enabled: true
+
+jack_o_lantern:
+  name: Jack O Lantern
+  texture: 7613e65edefe5663809143dfe8a2de63b750a4547994b79e7b92ba97beaeae4c
+  block: JACK_O_LANTERN
+  block_quantity: 1
+  enabled: true
+
+jukebox:
+  name: Jukebox
+  texture: a620b82cf11e3c1371cc51eb9e312de72a6a62664494ed2cb7181b1bdfbc9278
+  block: JUKEBOX
+  block_quantity: 1
+  enabled: true
+
+jungle_leaves:
+  name: Jungle Leaves
+  texture: 683adf4560de4741404093ac61c33fb556b3d9ee5140f620362589fddedefa2d
+  block: JUNGLE_LEAVES
+  block_quantity: 1
+  enabled: true
+
+jungle_log:
+  name: Jungle Log
+  texture: 79ca3540621c1c79c32bf42438708ff1f5f7d0af9b14a074731107edfeb691c
+  block: JUNGLE_LOG
+  block_quantity: 1
+  enabled: true
+
+jungle_log_rotated:
+  name: Jungle Log Rotated
+  texture: 2235e9b832aeb188b35953fc38c2c8f55ce7a44a12df8bc932170fcd6757bf3
+  block: JUNGLE_LOG
+  block_quantity: 1
+  enabled: true
+
+jungle_planks:
+  name: Jungle Planks
+  texture: fd9dd7e55ecb025f7f6caa799e4b0a0c5486097a577d63ff222bf338f5eb0
+  block: JUNGLE_PLANKS
+  block_quantity: 1
+  enabled: true
+
+jungle_wood:
+  name: Jungle Wood
+  texture: 1cefc19380683015e47c666e5926b15ee57ab33192f6a7e429244cdffcc262
+  block: JUNGLE_WOOD
+  block_quantity: 1
+  enabled: true
+
+lapis_block:
+  name: Lapis Block
+  texture: cad2c92fc2db34cbedd536f1e1e126ad8c7e927d1989ac039e5e76fa9a4834bc
+  block: LAPIS_BLOCK
+  block_quantity: 1
+  enabled: true
+
+lapis_ore:
+  name: Lapis Ore
+  texture: 2654b6d949a46d86ec01548c892a568b8cdad4646cb2e296d0dd58af779471
+  block: LAPIS_ORE
+  block_quantity: 1
+  enabled: true
+
+lectern_with_book:
+  name: Lectern with Book
+  texture: ec80f867d9c80f69e1b0a36abd5dc6d636bfad2b62df32e0a081bfe911d755d2
+  block: LECTERN
+  block_quantity: 1
+  enabled: true
+
+lectern:
+  name: Lectern
+  texture: ae3f9ad947054a74fb5a869f714ee70e1eab780da88eba1d835e1e82f7ca784
+  block: LECTERN
+  block_quantity: 1
+  enabled: true
+
+light_blue_concrete:
+  name: Light Blue Concrete
+  texture: f477f44389362c4c764c847a9739bc78c32467eab4e3830ae4c8beac3442ef9
+  block: LIGHT_BLUE_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+light_blue_concrete_powder:
+  name: Light Blue Concrete Powder
+  texture: 29e4a399befd967ec282c719fbfd644863281374dcb8137a72f7c4d013a73f
+  block: LIGHT_BLUE_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+light_blue_glazed_terracotta:
+  name: Light Blue Glazed Terracotta
+  texture: 31c895935174ac5f64edad215ce0b6b380137cc4d1f399a3df17dc3b2de40bde
+  block: LIGHT_BLUE_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+light_blue_shulker_box:
+  name: Light Blue Shulker Box
+  texture: afb16b22402ee27a9aa14fed107872bc5c4b52e13381546f8bc13db499552916
+  block: LIGHT_BLUE_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+light_blue_stained_glass:
+  name: Light Blue Stained Glass
+  texture: b5652ec33bb8abc6315093d5dfe0f34d474c277da9b0f2a726d504864e310093
+  block: LIGHT_BLUE_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+light_blue_terracotta:
+  name: Light Blue Terracotta
+  texture: 87bc8f5ac2bf3369741a962de2addbaa17d15cc4dadb19aef6e944817e6c24
+  block: LIGHT_BLUE_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+light_blue_wool:
+  name: Light Blue Wool
+  texture: f1af46febd45c0f4d81e8fa1b66b275d89e272b2ad55c978553a99c733e1ff
+  block: LIGHT_BLUE_WOOL
+  block_quantity: 1
+  enabled: true
+
+light_gray_concrete:
+  name: Light Gray Concrete
+  texture: 6ba0c4a0fdce923a9048328d664147c5b924491f4ee5fea71f3e9ec314
+  block: LIGHT_GRAY_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+light_gray_concrete_powder:
+  name: Light Gray Concrete Powder
+  texture: 1a4b0eaf5269a34e278cae8bc5c6cb11202344a94bd8f4a79ae6b812cd6cff
+  block: LIGHT_GRAY_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+light_gray_glazed_terracotta:
+  name: Light Gray Glazed Terracotta
+  texture: 64c04d6eb5b685284370d032cdb69cf2d4fd1ae004574fb4422f2b5577dd1932
+  block: LIGHT_GRAY_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+light_gray_shulker_box:
+  name: Light Gray Shulker Box
+  texture: 486db481162ef144192534e5292b4e481d9a5c58bd94ac77b18d33bb34021
+  block: LIGHT_GRAY_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+light_gray_stained_glass:
+  name: Light Gray Stained Glass
+  texture: 15798b87a85da3db69dc1c81f0b0db73809998385dea70160bba5ae8fa1366ff
+  block: LIGHT_GRAY_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+light_gray_terracotta:
+  name: Light Gray Terracotta
+  texture: 5cde99b72728ef881640fa5068d122e61dd9cf718dbb3709fc5b326f1af5d
+  block: LIGHT_GRAY_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+light_gray_wool:
+  name: Light Gray Wool
+  texture: 998ba2b374cfc89454c1b8c32db458a270675439a495496c96771c989116162
+  block: LIGHT_GRAY_WOOL
+  block_quantity: 1
+  enabled: true
+
+lime_concrete:
+  name: Lime Concrete
+  texture: 4b599c618e914c25a37d69f541a22bebbf751615263756f2561fab4cfa39e
+  block: LIME_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+lime_concrete_powder:
+  name: Lime Concrete Powder
+  texture: 9cb81a35d2b48d5fd81249369433c078b7c8bf42df5aa9c375c1ac85f4514
+  block: LIME_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+lime_glazed_terracotta:
+  name: Lime Glazed Terracotta
+  texture: 3e0b97c785e3976efa78acc828db67e71dead9b6694fde613d2e2e7cafbe1d5b
+  block: LIME_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+lime_shulker_box:
+  name: Lime Shulker Box
+  texture: a2716b37523f453e1871f2263f823c280bb8dd73d696d527b9eec87cdf32
+  block: LIME_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+lime_stained_glass:
+  name: Lime Stained Glass
+  texture: 50f4ef7d6c5d8da3618275223bdca147c9cfaac77d37e8ae81d757a593676ac2
+  block: LIME_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+lime_terracotta:
+  name: Lime Terracotta
+  texture: 55a117e161f7a291d0a3a168e77a21b09d39ffdf5773d22ac02f5fa6611db67
+  block: LIME_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+lime_wool:
+  name: Lime Wool
+  texture: d67470a0c18f6851e914353719e795877d29b3252f7e6bd4a1b865765bd74feb
+  block: LIME_WOOL
+  block_quantity: 1
+  enabled: true
+
+loom:
+  name: Loom
+  texture: 2de1a9fc8ddd772b3518bb955fd4dc7e83dcd54c12a357c1b2238102a15ce48c
+  block: LOOM
+  block_quantity: 1
+  enabled: true
+
+magenta_concrete:
+  name: Magenta Concrete
+  texture: 65ef2d87f7c1def79523e956767b8284ca389b24299f5e465d457989d62df8
+  block: MAGENTA_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+magenta_concrete_powder:
+  name: Magenta Concrete Powder
+  texture: 1834e7efa4842ae0e3194217de62fdc0bf9c72d193a160207d1c3741d7da
+  block: MAGENTA_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+magenta_glazed_terracotta:
+  name: Magenta Glazed Terracotta
+  texture: 3e617bed8e97d4087993ec0c898f8772c452b99d8b4b9a45e3ec434930409ee9
+  block: MAGENTA_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+magenta_shulker_box:
+  name: Magenta Shulker Box
+  texture: 551cf075a1f53315d761821cef72a25f6c15dd98a7a3872fc9bec597abc3b1
+  block: MAGENTA_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+magenta_stained_glass:
+  name: Magenta Stained Glass
+  texture: c347448efa9453e14bc8fb7d66fd7aadf18650ffcae049a81b84a7b35be9dbf9
+  block: MAGENTA_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+magenta_terracotta:
+  name: Magenta Terracotta
+  texture: 3441528d288b2b79736cb2248878fb91efb4462d43bebd711f7326afbbf85
+  block: MAGENTA_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+magenta_wool:
+  name: Magenta Wool
+  texture: f97012ed6a92b05ea0f194950748544e075baa28781ca373d1b27e28c26953c
+  block: MAGENTA_WOOL
+  block_quantity: 1
+  enabled: true
+
+magma_block:
+  name: Magma Block
+  texture: bb508c779f312daff337d137f34dd365a3f9c132bd92eb0c5ffab7c5b4a55c5
+  block: MAGMA_BLOCK
+  block_quantity: 1
+  enabled: true
+
+melon:
+  name: Melon
+  texture: 9636dee806ba47a2c40e95b57a12f37de6c2e677f2160132a07e24eeffa6
+  block: MELON
+  block_quantity: 1
+  enabled: true
+
+minecart:
+  name: Minecart
+  texture: c42070acc814bc946e59879ec7da45de984d3ee9a159393defb59853abe3b6
+  block: MINECART
+  block_quantity: 1
+  enabled: true
+
+mossy_cobblestone:
+  name: Mossy Cobblestone
+  texture: cde620e1800b3bed5b772860d7f5e4c3f8a712ae462bf9a797d504be130da3b8
+  block: MOSSY_COBBLESTONE
+  block_quantity: 1
+  enabled: true
+
+mossy_stone_bricks:
+  name: Mossy Stone Bricks
+  texture: 62150f2df1b58a9d6550492d803b6f68600727e238171925cc48693289e5abfc
+  block: MOSSY_STONE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+mushroom_stem:
+  name: Mushroom Stem
+  texture: 9da323ebbc4b1b5644fee3a0f1e5b15501be6b19a0fd38d3e0ba903f860a3c2e
+  block: MUSHROOM_STEM
+  block_quantity: 1
+  enabled: true
+
+mycelium:
+  name: Mycelium
+  texture: 7eb4c41f481e816cf4b507b0a17595f2ba1f24664dc432be347d4e7a4eb3
+  block: MYCELIUM
+  block_quantity: 1
+  enabled: true
+
+nether_bricks:
+  name: Nether Bricks
+  texture: e126dfae3176f47bad3fae131a66d43a3b4eb7f46df611cae0bf5c382c2b4
+  block: NETHER_BRICKS
+  block_quantity: 1
+  enabled: true
+
+nether_quartz_ore:
+  name: Nether Quartz Ore
+  texture: 44f3272a12d0a55153806703d6274c66da1972cf0c9ceaeefdc98df3ec2b4
+  block: NETHER_QUARTZ_ORE
+  block_quantity: 1
+  enabled: true
+
+nether_wart_block:
+  name: Nether Wart Block
+  texture: f8912bc1ad3ddbe39a19b734a42d8548964bb0a9ce58a52f1a6ae37121524
+  block: NETHER_WART_BLOCK
+  block_quantity: 1
+  enabled: true
+
+netherrack:
+  name: Netherrack
+  texture: 4bfd7e09dcad4c61247447c77d246d220ea91d98caabed5169dc5b8137fec9
+  block: NETHERRACK
+  block_quantity: 1
+  enabled: true
+
+note_block:
+  name: Note Block
+  texture: 4ceeb77d4d25724a9caf2c7cdf2d88399b1417c6b9ff5213659b653be4376e3
+  block: NOTE_BLOCK
+  block_quantity: 1
+  enabled: true
+
+oak_leaves:
+  name: Oak Leaves
+  texture: f248489285ec93735f23a8f34568af1210e6b5bd9fb4ef8075bcd920ba0d59f8
+  block: OAK_LEAVES
+  block_quantity: 1
+  enabled: true
+
+oak_log:
+  name: Oak Log
+  texture: 6d2e310879a6450af5625bcd45093dd7e5d8f827ccbfeac69c81537768406b
+  block: OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+oak_log_rotated:
+  name: Oak Log Rotated
+  texture: 54aada4d9fceda90186918d6ca35b9a0ead8e4b14c9d9427157ee9b9339d7b1
+  block: OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+oak_planks:
+  name: Oak Planks
+  texture: 10f96d9b72303f37279fa9c2cc23ee6f8db6823685b626b56ed53b674b6b0
+  block: OAK_PLANKS
+  block_quantity: 1
+  enabled: true
+
+oak_wood:
+  name: Oak Wood
+  texture: 2351d7fa9e9fe2a17ccab401ffc84c0a319db604926eba399374f1207d1fcf
+  block: OAK_WOOD
+  block_quantity: 1
+  enabled: true
+
+observer:
+  name: Observer
+  texture: 692f4f155da9f14177464290865a1b25a20ae02e0874bbc97da513dcf337e65c
+  block: OBSERVER
+  block_quantity: 1
+  enabled: true
+
+obsidian:
+  name: Obsidian
+  texture: 4de719b72909efa097815a63380f4456af9e4afebdd894e5b58b7c9e05675577
+  block: OBSIDIAN
+  block_quantity: 1
+  enabled: true
+
+orange_concrete:
+  name: Orange Concrete
+  texture: 63f13e23ec23467ac5e6f65a83f2686ebecd9986df5f8cbcd6fafc42e662b38
+  block: ORANGE_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+orange_concrete_powder:
+  name: Orange Concrete Powder
+  texture: 85bec1574de373dfb775ab58b2c1e4621d92c6daac7c6a74d78fb70fff4d0
+  block: ORANGE_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+orange_glazed_terracotta:
+  name: Orange Glazed Terracotta
+  texture: 157067871070b4b62aca4d57e4b3b02bbbd9a676a936bdd40481bd96ca78ea7
+  block: ORANGE_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+orange_shulker_box:
+  name: Orange Shulker Box
+  texture: 943b8dbd5967d83a9bf99771c268edf3c9ef6fb6e69c9af6f3d7bd4cbd9a9
+  block: ORANGE_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+orange_stained_glass:
+  name: Orange Stained Glass
+  texture: 1fa532c63f655d00ee998a06151567a9449987434a6a8e416cf88f5bf337f464
+  block: ORANGE_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+orange_terracotta:
+  name: Orange Terracotta
+  texture: 7316c16b1ac470d2c114434ff8730f1815709383db6f3cf720c39b6dce2116
+  block: ORANGE_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+orange_wool:
+  name: Orange Wool
+  texture: cbf7797a24a6af875f5c8271c5b8c425e19f372a415e0552fc247763f2859d1
+  block: ORANGE_WOOL
+  block_quantity: 1
+  enabled: true
+
+packed_ice:
+  name: Packed Ice
+  texture: 26e429c60932ebc366e791a42e186af888de08e5d8eb8ac6f5b6f4d440db486c
+  block: PACKED_ICE
+  block_quantity: 1
+  enabled: true
+
+pink_concrete:
+  name: Pink Concrete
+  texture: 22749d37c3f98d457bf54022a8b613a4353ed8dd2e149426fc42db3b7d
+  block: PINK_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+pink_concrete_powder:
+  name: Pink Concrete Powder
+  texture: df387b69f94feea25671fc399eb75dbeac60f512a4bfe78e454171ee3fc0
+  block: PINK_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+pink_glazed_terracotta:
+  name: Pink Glazed Terracotta
+  texture: 1c120ac2fe2bd7cdc2e86a53408449e389915995d49170131a9c920deb05992e
+  block: PINK_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+pink_shulker_box:
+  name: Pink Shulker Box
+  texture: f088cc82a5974f11f1b88ddc114b262161a4fbc090d2134490359a21e412a
+  block: PINK_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+pink_stained_glass:
+  name: Pink Stained Glass
+  texture: 66273770252f5a60b4af1d00463a9aa1963e32388af1eb1a11b5a7b7142c6562
+  block: PINK_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+pink_terracotta:
+  name: Pink Terracotta
+  texture: f75db81e1592f32d771dd5dbc6c3a51e7a0d66b22dfe296b96868505ceec
+  block: PINK_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+pink_wool:
+  name: Pink Wool
+  texture: d0883650ea929db0eabdf5bc75599d8ef00d70340cd1ce5e04ad95ef8ed83b73
+  block: PINK_WOOL
+  block_quantity: 1
+  enabled: true
+
+piston:
+  name: Piston
+  texture: 12743a8bea752d6daf672dea367e1a5d398aecbe0c3c8483a90ec9ac4412a41
+  block: PISTON
+  block_quantity: 1
+  enabled: true
+
+podzol:
+  name: Podzol
+  texture: f707bc872e132d764bbee08cc084015529cae55fb9747471b9e593903ff9aee
+  block: PODZOL
+  block_quantity: 1
+  enabled: true
+
+polished_andesite:
+  name: Polished Andesite
+  texture: cc58df2f005eda0ea185723f0d267a9144be3188beed83f84129572a7a463a39
+  block: POLISHED_ANDESITE
+  block_quantity: 1
+  enabled: true
+
+polished_diorite:
+  name: Polished Diorite
+  texture: 50965b2e9297f1ad534d2f0e22ed918ca3207c4f0b9c44372e509353218d6b8e
+  block: POLISHED_DIORITE
+  block_quantity: 1
+  enabled: true
+
+polished_granite:
+  name: Polished Granite
+  texture: fdd3447800cb28d61c33e98c5f5f020a9aa66d99935944b60279873dd566edd0
+  block: POLISHED_GRANITE
+  block_quantity: 1
+  enabled: true
+
+prismarine:
+  name: Prismarine
+  texture: 97e56140686e476aef5520acbabc239535ff97e24b14d87f4982f13675c
+  block: PRISMARINE
+  block_quantity: 1
+  enabled: true
+
+prismarine_bricks:
+  name: Prismarine Bricks
+  texture: 359c9fdaf30b3b4f6339a9a055e504bdc956b237ecf12caada7289a5d4f2792d
+  block: PRISMARINE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+pumpkin:
+  name: Pumpkin
+  texture: 63979e9639a14c3d46ce46d714d423cb159091839a762cf939716f1511fd15
+  block: PUMPKIN
+  block_quantity: 1
+  enabled: true
+
+purple_concrete:
+  name: Purple Concrete
+  texture: f0c05d560d8e13f0cb25c15c831bc595450c5e54ce35fa54e17e0495267c
+  block: PURPLE_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+purple_concrete_powder:
+  name: Purple Concrete Powder
+  texture: 6c4dc8338415b2b989ab79495986ec7895aa03679d2bcdd6d9ebb633b87fc4
+  block: PURPLE_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+purple_glazed_terracotta:
+  name: Purple Glazed Terracotta
+  texture: 6b75e87d50cb8966a3a56f73d0a16642948ff7d1479b7d59054154bf6be03cd4
+  block: PURPLE_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+purple_shulker_box:
+  name: Purple Shulker Box
+  texture: 6685160003eaa9135e02b0c288bc6fc02356bebb01ba7317fe11435e967f0ec5
+  block: PURPLE_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+purple_stained_glass:
+  name: Purple Stained Glass
+  texture: 44bfe9c430af4453bc1bea3fdc39cacf5a41593bf2ca842d64a9eb608bbefbad
+  block: PURPLE_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+purple_terracotta:
+  name: Purple Terracotta
+  texture: e6f54f82836a55924ee85dec56bbbd8ca14633daa9bfe3565592edf39a6de
+  block: PURPLE_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+purple_wool:
+  name: Purple Wool
+  texture: 89ec5a30222d0659b0dbee844b8f53eae62fe95b4a3448a9ef790a7aedb296d9
+  block: PURPLE_WOOL
+  block_quantity: 1
+  enabled: true
+
+purpur_block:
+  name: Purpur Block
+  texture: f813bc48645febc7d550978fb9adc7d104aaed9809746bdcf0bc6978795ef
+  block: PURPUR_BLOCK
+  block_quantity: 1
+  enabled: true
+
+purpur_pillar:
+  name: Purpur Pillar
+  texture: a452498bd9ba51a1424d96bf96be0cb103c9338defdf172ca13f5e24f5f9d8f
+  block: PURPUR_PILLAR
+  block_quantity: 1
+  enabled: 
+  
+purpur_pillar_rotated:
+  name: Purpur Pillar Rotated
+  texture: 31f1ee1982b3a11280e8331022990eba4f8bee4b707ffadaa79af5df4e62de59
+  block: PURPUR_PILLAR
+  block_quantity: 1
+  enabled: true
+
+quartz_block:
+  name: Quartz Block
+  texture: e5e2b2ed298b53cc84783cd785ec57da49ceaabdcff31b25fe5256b3429b412
+  block: QUARTZ_BLOCK
+  block_quantity: 1
+  enabled: true
+
+quartz_pillar:
+  name: Quartz Pillar
+  texture: baebf178a67f2ea3c9d896d3870f1f8ce38fae060e010c69798ad351e31e6197
+  block: QUARTZ_PILLAR
+  block_quantity: 1
+  enabled: true
+
+quartz_pillar_rotated:
+  name: Quartz Pillar Rotated
+  texture: 22cb04ec5638366fe6d5730dff348f6c00164883a5cdf21edac2b30e284c516
+  block: QUARTZ_PILLAR
+  block_quantity: 1
+  enabled: true
+
+
+red_concrete:
+  name: Red Concrete
+  texture: 61856c7b378d350262143843d1f9fbb21911a71983ba7b39a4d4ba5b66bedc6
+  block: RED_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+red_concrete_powder:
+  name: Red Concrete Powder
+  texture: f9a51f27d2d938897bc42a3fe2c3135da2671686f57824115f8f8da78a
+  block: RED_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+red_glazed_terracotta:
+  name: Red Glazed Terracotta
+  texture: 2d2225bfd64e7f7bec96bd830e5c81bc30fde96bbda16a0c5bce5b5ec18b6e12
+  block: RED_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+red_mushroom_block:
+  name: Red Mushroom Block
+  texture: 82e642ba67b0bad5f7ae959a247c9ad1ec4a8c62414bde56a81064cd8af6918a
+  block: RED_MUSHROOM_BLOCK
+  block_quantity: 1
+  enabled: true
+
+red_sand:
+  name: Red Sand
+  texture: a3cb5464ab9b851b9d4ac8b8cdbb865e74c589b3485abece589d429d899aed
+  block: RED_SAND
+  block_quantity: 1
+  enabled: true
+
+red_sandstone:
+  name: Red Sandstone
+  texture: db31be197ac7d78b30c34dac2665dbf1a74f96a79e52cb8ed5088ad70ee9348
+  block: RED_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+red_shulker_box:
+  name: Red Shulker Box
+  texture: 6eb911ea94b5a1cf77f3ca637a3b1662b35121bd72e118651184f2fb1060d1
+  block: RED_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+red_stained_glass:
+  name: Red Stained Glass
+  texture: b254e2426d2acc84c5c658869a86d7a1cc9a4f604866aae467b5b49665404f5d
+  block: RED_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+red_terracotta:
+  name: Red Terracotta
+  texture: 9e42f682e430b55b61204a6f8b76d5227d278ed9ec4d98bda4a7a4830a4b6
+  block: RED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+red_wool:
+  name: Red Wool
+  texture: 86d35a963d5987894b6bc214e328b39cd2382426ff9c8e082b0b6a6e044d3a3
+  block: RED_WOOL
+  block_quantity: 1
+  enabled: true
+
+redstone_block:
+  name: Redstone Block
+  texture: bb78fa5defe72debcd9c76ab9f4e114250479bb9b44f42887bbf6f738612b
+  block: REDSTONE_BLOCK
+  block_quantity: 1
+  enabled: true
+
+redstone_lamp:
+  name: Redstone Lamp
+  texture: f3e71ad919523eace9cd62a25b18e4e17ab38d1256241f4262dfba7297c4d92
+  block: REDSTONE_LAMP
+  block_quantity: 1
+  enabled: true
+
+redstone_lamp_on:
+  name: Redstone Lamp On
+  texture: 7eb4b34519fe15847dbea7229179feeb6ea57712d165dcc8ff6b785bb58911b0
+  block: REDSTONE_LAMP
+  block_quantity: 1
+  enabled: true
+
+redstone_ore:
+  name: Redstone Ore
+  texture: 569a1f114151b4521373f34bc14c2963a5011cdc25a6554c48c708cd96ebfc
+  block: REDSTONE_ORE
+  block_quantity: 1
+  enabled: true
+
+sand:
+  name: Sand
+  texture: 4f493dd806533d9d20e84953954365f4d369709cebc9ddef022d1fd40d86a68f
+  block: SAND
+  block_quantity: 1
+  enabled: true
+
+sandstone:
+  name: Sandstone
+  texture: 48f80e9b2d6593a32d7c44c8bc860feba34b34f8d54d0cdb7211e23e8ddc33a4
+  block: SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+scaffolding:
+  name: Scaffolding
+  texture: 215cf4c4336ae24cedb92c770d82560d0c9066ff07cb438dc3eae6673dd168d6
+  block: SCAFFOLDING
+  block_quantity: 1
+  enabled: true
+
+sea_lantern:
+  name: Sea Lantern
+  texture: 824c6ff1714eb2c3b844d46d2e5ea2f26d273a33eaaa744abf645b060b47d7
+  block: SEA_LANTERN
+  block_quantity: 1
+  enabled: true
+
+shulker_box:
+  name: Shulker Box
+  texture: 25c4d24affdd48102620361527d2156e18c223bae5189ac439815643f3cff9d
+  block: SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+slime_block:
+  name: Slime Block
+  texture: 90e65e6e5113a5187dad46dfad3d3bf85e8ef807f82aac228a59c4a95d6f6a
+  block: SLIME_BLOCK
+  block_quantity: 1
+  enabled: true
+
+smithing_table:
+  name: Smithing Table
+  texture: 272d1be488d267ecbecf7fbc314390636e942b6460628b02104a838184b7e737
+  block: SMITHING_TABLE
+  block_quantity: 1
+  enabled: true
+
+smoker:
+  name: Smoker
+  texture: b991051a83cb3c91bbc4a7685a5eed5bf91eb7979f921a0145fc9faf1ede6265
+  block: SMOKER
+  block_quantity: 1
+  enabled: 
+  
+smoker_lit:
+  name: Smoker Lit
+  texture: c5c5b24cd5efa07d31beea655d7ff972e6f47cdb898be4404363deeba43ba5d
+  block: SMOKER
+  block_quantity: 1
+  enabled: true
+
+smooth_quartz:
+  name: Smooth Quartz
+  texture: c92b2b0414cee36b24d83f5cfa071d8638527249c2dcddfa580be37e07c60e08
+  block: SMOOTH_QUARTZ
+  block_quantity: 1
+  enabled: true
+
+smooth_red_sandstone:
+  name: Smooth Red Sandstone
+  texture: d23b7307140f9fd757bcecbeb85734f1eafd0574aeed9e935bb1db34949d3389
+  block: SMOOTH_RED_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+smooth_sandstone:
+  name: Smooth Sandstone
+  texture: c3fe24a91e14944861ff37c7a60e18c5fc54a41a8531f9ba6124d15292249824
+  block: SMOOTH_SANDSTONE
+  block_quantity: 1
+  enabled: true
+
+smooth_stone:
+  name: Smooth Stone
+  texture: 8dd0cd158c2bb6618650e3954b2d29237f5b4c0ddc7d258e17380ab6979f071
+  block: SMOOTH_STONE
+  block_quantity: 1
+  enabled: true
+
+snow_block:
+  name: Snow Block
+  texture: 5dd6fe267a418dcc7f37a8f76855b5328b1303897b342a107cf162f14fe3d
+  block: SNOW_BLOCK
+  block_quantity: 1
+  enabled: true
+
+soul_sand:
+  name: Soul Sand
+  texture: f08d593766c55e42b4953a68bf6f34825531884081c150c166c8110279c9f2a5
+  block: SOUL_SAND
+  block_quantity: 1
+  enabled: true
+
+sponge:
+  name: Sponge
+  texture: 12f096eef87d9f20ccaaba2a02eed6f43e6432a6928fe16467cb4deb5e74118c
+  block: SPONGE
+  block_quantity: 1
+  enabled: true
+
+spruce_leaves:
+  name: Spruce Leaves
+  texture: 4aa91a87bdae24fc4fa9560122c5ae1f72fef4d469005b4b7ba1301d5f269350
+  block: SPRUCE_LEAVES
+  block_quantity: 1
+  enabled: true
+
+spruce_log:
+  name: Spruce Log
+  texture: d26eefd87263cc485c17cb5f818ee3bad93ca7691385cb5e5d698aff733a3
+  block: SPRUCE_LOG
+  block_quantity: 1
+  enabled: true
+
+spruce_log_rotated:
+  name: Spruce Log Rotated
+  texture: 3b846ca71bb3321c0906bb1b573aaba224a528ea826392db3b57f34d3071d3
+  block: SPRUCE_LOG
+  block_quantity: 1
+  enabled: true
+
+spruce_planks:
+  name: Spruce Planks
+  texture: 10eb1968ff2da6bca68f59b6111713e08d22499229e1086449cba50f7de64ae
+  block: SPRUCE_PLANKS
+  block_quantity: 1
+  enabled: true
+
+spruce_wood:
+  name: Spruce Wood
+  texture: 90d9d4af70896240caef87bb1e11fc579631a12614edb44e8e9384c83beda6fd
+  block: SPRUCE_WOOD
+  block_quantity: 1
+  enabled: true
+
+sticky_piston:
+  name: Sticky Piston
+  texture: 7ca4d218df9d32cd47d9c1d294877122be5919b418a6cc3d089162b133f2db
+  block: STICKY_PISTON
+  block_quantity: 1
+  enabled: true
+
+stone:
+  name: Stone
+  texture: 154818233c811873e85f5a4ea4429b75f23b6ae0ea6f5fc0f7bb420d7c471
+  block: STONE
+  block_quantity: 1
+  enabled: true
+
+stone_bricks:
+  name: Stone Bricks
+  texture: 88b767c8a1ea8e404b3cca85349f653b57b0c3f46427fbeceaccf3602bc29e
+  block: STONE_BRICKS
+  block_quantity: 1
+  enabled: true
+
+stripped_acacia_log:
+  name: Stripped Acacia Log
+  texture: 29ec78a966e18d31fd2cd19752eb40b9c24bf156ea771c0a1981160a40d210c2
+  block: STRIPPED_ACACIA_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_acacia_log_rotated:
+  name: Stripped Acacia Log Rotated
+  texture: d4bda7a8f9d2e74ab2b79c07e8c9c719e3525b427e2ed2651850373d216c5219
+  block: STRIPPED_ACACIA_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_acacia_wood:
+  name: Stripped Acacia Wood
+  texture: 4e1a7f4942d6844100e6658223490631344ed567cc2bb34e5812f9ffa3715295
+  block: STRIPPED_ACACIA_WOOD
+  block_quantity: 1
+  enabled: true
+
+stripped_birch_log:
+  name: Stripped Birch Log
+  texture: e1cde355026d12b3708a4ab77519b7746b6bb2bd581e3276dc33fe22617e4b79
+  block: STRIPPED_BIRCH_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_birch_log_rotated:
+  name: Stripped Birch Log Rotated
+  texture: 4b182c7e835ef81a6fe7657abcbb6a6db97aa642168d0f4edd354ceca8f39420
+  block: STRIPPED_BIRCH_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_birch_wood:
+  name: Stripped Birch Wood
+  texture: b0c30a07d608c46b38bfdaae8e3ef812dad1fb198ffcea403e0585b2c0c499b1
+  block: STRIPPED_BIRCH_WOOD
+  block_quantity: 1
+  enabled: true
+
+stripped_dark_oak_log:
+  name: Stripped Dark Oak Log
+  texture: b3ebeb4b2b80eb82eb4f42cd9278c21aaf124c6c695ba3fd8ed62c65ae624ad9
+  block: STRIPPED_DARK_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_dark_oak_log_rotated:
+  name: Stripped Dark Oak Log Rotated
+  texture: c407039722b65e4f34dc58dece36d1e8dcff26e42923e0196459cdbf59330e40
+  block: STRIPPED_DARK_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_dark_oak_wood:
+  name: Stripped Dark Oak Wood
+  texture: ba3da17119c4ca06ed0ed9aa0d9352712ee021085484e99cc1c9439d6abcf7ff
+  block: STRIPPED_DARK_OAK_WOOD
+  block_quantity: 1
+  enabled: true
+
+stripped_jungle_log:
+  name: Stripped Jungle Log
+  texture: b075376f6d3be9cb94b1c29815a44b5d32599baf3457bfc67abffa7b01675d3
+  block: STRIPPED_JUNGLE_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_jungle_log_rotated:
+  name: Stripped Jungle Log Rotated
+  texture: 838be44e43227c2e70a7c77cacaf38dbb10a9061ad27b94beb3b5cd59f18c205
+  block: STRIPPED_JUNGLE_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_jungle_wood:
+  name: Stripped Jungle Wood
+  texture: e134b38ccb3ec17c5ff74e45ba0191ae06c670514ddf075165a9f5d507eb66d1
+  block: STRIPPED_JUNGLE_WOOD
+  block_quantity: 1
+  enabled: true
+
+stripped_oak_log:
+  name: Stripped Oak Log
+  texture: b66be395fe28ec81ccfcf2487c9a23a4145edb3680d6d3fb636905bcd47a78e1
+  block: STRIPPED_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_oak_log_rotated:
+  name: Stripped Oak Log Rotated
+  texture: bdea21fd30d7e8ca2296b205f8b26c2ebc065e18dcd3dc2263702556166f0daf
+  block: STRIPPED_OAK_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_oak_wood:
+  name: Stripped Oak Wood
+  texture: af1b8522f6fbf34c11f94b0c6117834c43ec40cb1b0e58cd62d721909baa311f
+  block: STRIPPED_OAK_WOOD
+  block_quantity: 1
+  enabled: true
+
+stripped_spruce_log:
+  name: Stripped Spruce Log
+  texture: 9866ec34d623a42b5f6593aec229b588802ed1e296e19ec289c93f8607b9ed8c
+  block: STRIPPED_SPRUCE_LOG
+  block_quantity: 1
+  enabled: 
+  
+stripped_spruce_log:
+  name: Stripped Spruce Log Rotated
+  texture: e558ca87df54184157c4a52b3806864ecf8dbb97c9569b6505e5f43b9410873a
+  block: STRIPPED_SPRUCE_LOG
+  block_quantity: 1
+  enabled: true
+
+stripped_spruce_wood:
+  name: Stripped Spruce Wood
+  texture: 13ce063d764ecc16aec358f14362c65c5a30e0f232483389c97b866457c8d066
+  block: STRIPPED_SPRUCE_WOOD
+  block_quantity: 1
+  enabled: true
+
+terracotta:
+  name: Terracotta
+  texture: 82d5fefe20daf31c238ee227dd141827ada5ef8482d8d357bbe5a7cf40af85
+  block: TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+tnt:
+  name: Tnt
+  texture: 3af59776f2f03412c7b5947a63a0cf283d51fe65ac6df7f2f882e08344565e9
+  block: TNT
+  block_quantity: 1
+  enabled: true
+
+tnt_minecart:
+  name: Tnt Minecart
+  texture: c4d7fc8e3a959ade7d9cf663f1e82db7975543e288ab8d11eb2541888213526
+  block: TNT_MINECART
+  block_quantity: 1
+  enabled: true
+
+tube_coral_block:
+  name: Tube Coral Block
+  texture: 39fc3cf5508d40c14699d5bf7f252759e1956af9a66d15a6c3854378c61f6d9a
+  block: TUBE_CORAL_BLOCK
+  block_quantity: 1
+  enabled: true
+
+wet_sponge:
+  name: Wet Sponge
+  texture: 211ab3f0f6c3c848c1696abb955a7bfdf94a9c9023035d79fd13f4bd1e1bd720
+  block: WET_SPONGE
+  block_quantity: 1
+  enabled: true
+
+white_concrete:
+  name: White Concrete
+  texture: d0925c48b05662848ec9f0685f858d889d3da11b071788eaa36ccd8f1f31de
+  block: WHITE_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+white_concrete_powder:
+  name: White Concrete Powder
+  texture: af3eaf4c15ad67c51dff9097bd7abd4a82bab7bed83ab77a6177f2e57b
+  block: WHITE_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+white_glazed_terracotta:
+  name: White Glazed Terracotta
+  texture: d2d895789f3894788aadf631d8804b84f9e3d7d2b87f048e93888b48e6ea0c8b
+  block: WHITE_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+white_shulker_box:
+  name: White Shulker Box
+  texture: b25b46b5fc593b086ebec532c66fc031a941612fc6def57561d83a9cea20f7
+  block: WHITE_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+white_stained_glass:
+  name: White Stained Glass
+  texture: 2312e1b93e3544d0ed01e04716e5e2f3ea8ed799ae0253e4b1824de8b3002f64
+  block: WHITE_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+white_terracotta:
+  name: White Terracotta
+  texture: 7159594388bf013a4e3e6869faabcb95d31dd3f4a258a535e7cbd92c9986b7
+  block: WHITE_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+white_wool:
+  name: White Wool
+  texture: 15ad93d56546f12d5356effcbc6ec4c87ba245d81e1662c4b830f7d298e9
+  block: WHITE_WOOL
+  block_quantity: 1
+  enabled: true
+
+yellow_concrete:
+  name: Yellow Concrete
+  texture: fca5bff325ed71d97a2ddfc83acf05fe7fd9cb7cbdb15ebb4f05621907e9f2b
+  block: YELLOW_CONCRETE
+  block_quantity: 1
+  enabled: true
+
+yellow_concrete_powder:
+  name: Yellow Concrete Powder
+  texture: f7a9964f572fd03c32dfa2586155fa3d10e627df779a41f262fde82bfb41ba0
+  block: YELLOW_CONCRETE_POWDER
+  block_quantity: 1
+  enabled: true
+
+yellow_glazed_terracotta:
+  name: Yellow Glazed Terracotta
+  texture: 878728912414853a563c95cdf119ac6b2d486e3784ece6bb1745fa4b7d6c4002
+  block: YELLOW_GLAZED_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+yellow_shulker_box:
+  name: Yellow Shulker Box
+  texture: d727763df1d1ba597507e614b6c7132a0869c7472c4fdbbecd99134cd55
+  block: YELLOW_SHULKER_BOX
+  block_quantity: 1
+  enabled: true
+
+yellow_stained_glass:
+  name: Yellow Stained Glass
+  texture: 5065182681e05b1fba7488981b4756398e8805e081d054726d8eb1a40e10efc0
+  block: YELLOW_STAINED_GLASS
+  block_quantity: 1
+  enabled: true
+
+yellow_terracotta:
+  name: Yellow Terracotta
+  texture: 63517bc3ec32869d939c89d2961e30b7161eacd9255bec313be23960221d41b4
+  block: YELLOW_TERRACOTTA
+  block_quantity: 1
+  enabled: true
+
+yellow_wool:
+  name: Yellow Wool
+  texture: 4d905269accab24b11924eba8bd92991b8d85ce4276027a1636c931b6d06c89e
+  block: YELLOW_WOOL
+  block_quantity: 1
+  enabled: true
+

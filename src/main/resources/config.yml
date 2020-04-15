@@ -1,0 +1,21 @@
+heads:
+  enabled: true
+  payment: EMERALD # Primary type of payment
+  price: 1 # Cost per player head in primary type of payment
+  max: 3 # The max number of different player heads trades per Wandering Trader
+  min: 1 # The minimum number of different player heads trades per Wandering Trader
+  quantity: 3 # The number of trades per player heads item
+  stacksize: 1 # The number of items per trade for player heads
+  restock: 0 # The number of restocks per player headsck item
+  extraheads: true # load extra player heads from config file
+
+miniblocks:
+  enabled: true
+  requireblock: true # Determines if the trade requires the "source" block as well as money
+  payment: EMERALD # Primary type of payment
+  price: 1 # Cost per player head in primary type of payment
+  max: 8 # The max number of different miniblock trades per Wandering Trader
+  min: 5 # The minimum number of different miniblock trades per Wandering Trader
+  quantity: 1 # The number of trades per miniblock item
+  stacksize: 8 # The number of items per trade for miniblocks
+  restock: 0 # The number of restocks per miniblock item
