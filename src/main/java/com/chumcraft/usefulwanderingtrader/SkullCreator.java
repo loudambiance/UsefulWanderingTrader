@@ -1,17 +1,3 @@
-package com.chumcraft.usefulwanderingtrader;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.block.Skull;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.SkullMeta;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Base64;
-import java.util.UUID;
-
 /**
  * MIT License
  * 
@@ -35,6 +21,20 @@ import java.util.UUID;
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * 
  */
+
+package com.chumcraft.usefulwanderingtrader;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.Skull;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.SkullMeta;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Base64;
+import java.util.UUID;
 
 /**
  * A library for the Bukkit API to create player skulls
