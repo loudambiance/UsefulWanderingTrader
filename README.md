@@ -1,6 +1,6 @@
 # UsefulWanderingTrader
 
-Spigot Plugin to reimplement [Vanilla Tweaks Wandering Trades](Https://www.vanillatweaks.com) datapack as spigot plugin with additional functionality.
+Spigot Plugin to reimplement [Vanilla Tweaks Wandering Trades](https://www.vanillatweaks.net/picker/datapacks/) datapack as spigot plugin with additional functionality.
 
 Plugin adds three new category of trades to the Wandering Traders
 - Player Heads (Players from your server)
