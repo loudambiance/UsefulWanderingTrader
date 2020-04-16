@@ -7,6 +7,16 @@ Plugin adds three new category of trades to the Wandering Traders
 - Player Heads (Any custom head)
 - Miniblocks
 
+By default, the Wandering Trader will add between 1 and 3 player heads for trade (assuming your server has that many players), and 5-8 miniture blocks. Each trade costs 1 Emerald. The miniblocks also require the full size block as part of the payment. For the trade, the player will receive 1 player head per trade, maxing out at 3, and 8 miniblocks per trade, with only 1 trade per available trade possible.
+
+The player heads available for trade are taken from 4 places (in the default configuration, only 1 is able to be turned off), in the following order:
+- Offline Players (all players who have ever logged into your server
+- Whitelist Players (if your server has an enabled whitelist)
+- OPs List (if your server has enabled ops)
+- playerheads.yml (extraheads, this can be turned off in config.yml, and individual heads can be turned on/off in playerheads.yml)
+
+The first 3 options check for duplicates using UUID, this is not possible with the last option.
+
 # Settings
 ## config.yml
 This file controls the global settings. The defaults are:
