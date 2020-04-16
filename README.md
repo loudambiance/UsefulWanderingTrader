@@ -89,7 +89,7 @@ With this example, the identifier is:
 b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0  
 These textures can be searched for on [Minecraft-Heads.com](https://minecraft-heads.com/custom-heads). The identifier is listed as the last item on any head page.
 
-**I will not accept pull requests for non-vanilla blocks**
+**I will not accept pull requests for non-vanilla blocks**  
 The settings data types:
 |Setting Name|Data type|
 |---|---|
@@ -121,7 +121,7 @@ With this example, the identifier is:
 b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0  
 These textures can be searched for on [Minecraft-Heads.com](https://minecraft-heads.com/custom-heads). The identifier is listed as the last item on any head page.
 
-**I will not accept pull requests for player heads**
+**I will not accept pull requests for player heads**  
 The settings data types:
 |Setting Name|Data type|
 |---|---|
