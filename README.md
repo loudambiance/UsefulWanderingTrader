@@ -9,7 +9,6 @@ Plugin adds three new category of trades to the Wandering Traders
 
 # Settings
 ## config.yml
----
 This file controls the global settings. The defaults are:
 ```
 heads:
@@ -65,7 +64,6 @@ The settings data types:
 |requireblock|boolean|miniblock|
 
 ## miniblocks.yml
----
 This file controls the configuration of each miniblock. You can add any number of additional blocks by adding new blocks in the following format:
 
 ```
@@ -91,7 +89,7 @@ With this example, the identifier is:
 b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0  
 These textures can be searched for on [Minecraft-Heads.com](https://minecraft-heads.com/custom-heads). The identifier is listed as the last item on any head page.
 
-## **I will not accept pull requests for non-vanilla blocks**
+**I will not accept pull requests for non-vanilla blocks**
 The settings data types:
 |Setting Name|Data type|
 |---|---|
@@ -102,7 +100,6 @@ The settings data types:
 |enabled|boolean|
 
 ## playerheads.yml
----
 This file controls the configuration of extraheads. You can add any number of additional player heads by adding new heads in the following format:
 
 ```
@@ -124,7 +121,7 @@ With this example, the identifier is:
 b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0  
 These textures can be searched for on [Minecraft-Heads.com](https://minecraft-heads.com/custom-heads). The identifier is listed as the last item on any head page.
 
-## **I will not accept pull requests for player heads**
+**I will not accept pull requests for player heads**
 The settings data types:
 |Setting Name|Data type|
 |---|---|
