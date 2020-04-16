@@ -15,7 +15,137 @@
 #   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
 #   enabled: 
 
-xisuma:
+PythonGB:
+  name: PythonGB
+  texture: b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0
+  enabled: true
+
+Xisuma:
   name: Xisuma
   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
+  enabled: true
+
+Docm77:
+  name: Docm77
+  texture: 21f6cadc3e9cad95fbf6c11fa58e80ea4db519e3b4250de96130dcf8c1a743ee
+  enabled: true
+
+Jessassin:
+  name: Jessassin
+  texture: 13437b0f444ea43bbc477ec2127c9d66747e3e73c6a7d7e120afd1a043a8ac1d
+  enabled: true
+
+xBCrafted:
+  name: xBCrafted
+  texture: cf53d8b400fef028dec952130d406544adec164d1db4f0d0b1146c65a1dfc263
+  enabled: true
+
+Etho:
+  name: Etho
+  texture: ff7747ea340989b98a8222948af45454bee909b9ad830b2a01dcf9117c83a33a
+  enabled: true
+
+Mumbo:
+  name: Mumbo
+  texture: 34a8d879ef29731e2b448f6ee6004855b8ffafef3bfd78d65468642736a81b42
+  enabled: true
+
+iJevin:
+  name: iJevin
+  texture: 5e0419f0c80d6ad59c1c32b46c777562fdc83a00e18ba484e273e74f246dda89
+  enabled: true
+
+impulseSV:
+  name: impulseSV
+  texture: c7251c860558a56c04f60e107050b7791380a80d4ea0ab6a27b97979cb8fbc6d
+  enabled: true
+
+Renthedog:
+  name: Renthedog
+  texture: d0ba64a925dcf5154e663c584d48ce80a40fd129ee94e70446f72e8a024a9c9
+  enabled: true
+
+Tinfoilchef:
+  name: Tinfoilchef
+  texture: 5a3b7070689b8d88b164908fdc6c00d035f7af462a7411144d7692d2478faffb
+  enabled: true
+
+Biffa2001:
+  name: Biffa2001
+  texture: c9024c118e79b3950f4b16fe7cd0964db506588de1f4fc294401422fcaeefae0
+  enabled: true
+
+Stressmonster101:
+  name: Stressmonster101
+  texture: 955d40ac90bd181d249a6fca28a8205d39bac43b73e0ce56ce32fea4db1d8057
+  enabled: true
+
+GoodTimesWithScar:
+  name: GoodTimesWithScar
+  texture: 81b64bae9874378acd3f9b7b64c84d5ffbe3c06270d384e2feba455eedb2a916
+  enabled: true
+
+Zedaph:
+  name: Zedaph
+  texture: 433b1da502d62a3836457bcd2b63e32436b285829cf39caa4d07f7af0fd932d0
+  enabled: true
+
+joehillssays:
+  name: joehillssays
+  texture: a236bd780f93537425ea0af5d4a2a5342fb80de0691eb11d993b556a3ca24469
+  enabled: true
+
+cubfan135:
+  name: cubfan135
+  texture: 98150e95d269946646e1c7ab92ed519ebad957836968c0047f33fa7bae02e4ac
+  enabled: true
+
+Welsknight:
+  name: Welsknight
+  texture: b255894a9696553ce97b59bfa31df8e5e8b8aead1dde3a6daa766a0cc4b1e753
+  enabled: true
+
+Keralis:
+  name: Keralis
+  texture: b8787601d4e9d1a8c42f927f7f1f7b75cec1bdde342d405ec0639d8f8a962d21
+  enabled: true
+
+falsesymmetry:
+  name: falsesymmetry
+  texture: 71d1ee733d3bbb10f24553c87fcf3ccf8c3531075c63ab13eefd5ff2df959ebf
+  enabled: true
+
+hypnotizd:
+  name: hypnotizd
+  texture: 81494dc9c92754eb64f757a8e4a2c1f2adcca2115d11972d6d39dc9fdb16f564
+  enabled: true
+
+VintageBeef:
+  name: VintageBeef
+  texture: def5fb318f855fb63ba1efdcc1202ee238cb403a21cd6bb4f324374f1e14ddd9
+  enabled: true
+
+BdoubleO100:
+  name: BdoubleO100
+  texture: 75e805d04b378ed73d449eeb953e0d57a2b2dfbf3b79516994a23a1da07051de
+  enabled: true
+
+Tango:
+  name: Tango
+  texture: 718601259d3755d6aea322cbb333c4e369cf3b2168108f519b54b5403f6bf336
+  enabled: true
+
+Grian:
+  name: Grian
+  texture: 4b7ab6dd7318e99432f2431be0eb6b0f1c70949a4b92f453c60ea5b8d33b712c
+  enabled: true
+
+iskall85:
+  name: iskall85
+  texture: f0bfa8a118b7f7d74bde847c1a24831fbca682ad3cc5d79839cbefb9de490736
+  enabled: true
+
+ZombieCleo:
+  name: ZombieCleo
+  texture: 6a476d1af0d19cbd8ba47cdc1301ee0f6d37090efbb7c9dd60bac85cde16ba7d
   enabled: true
