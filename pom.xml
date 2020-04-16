@@ -16,6 +16,14 @@
         <mainClass>com.chumcraft.usefulwanderingtrader.UWTPlugin</mainClass>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub loudambiance Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/loudambiance/UsefulWanderingTrader</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
