@@ -29,3 +29,5 @@ jobs:
       with:
         name: Package
         path: staging
+    - name: Publish package
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/loudambiance -Dtoken=GH_TOKEN
