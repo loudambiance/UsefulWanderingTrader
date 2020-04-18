@@ -37,14 +37,8 @@ public class UWTPlugin extends JavaPlugin {
         this.playerheads = new PlayerHeads(this);
         this.miniblocks = new Miniblocks(this);
         this.updateMetrics();
+        this.checkUpdates();
 
-        new UpdateChecker(this, 77477).getVersion(version -> {
-            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
-                //this.getLogger().info("There is not a new update available.");
-            } else {
-                this.getLogger().info("There is a new update for UsefulWandering Trader available, you should consider updating.");
-            }
-        });
 
         // Commands enabled with following method must have entries in plugin.yml
         getServer().getPluginManager().registerEvents(new WanderingTraderListener(this), this);
@@ -68,15 +62,26 @@ public class UWTPlugin extends JavaPlugin {
 
         // Optional: Add custom charts
         metrics.addCustomChart(new Metrics.SimplePie("player_heads", () -> Integer.toString(this.playerheads.PlayerHeadList.size())));
-        metrics.addCustomChart(new Metrics.SimplePie("head_price", () -> Integer.toString(this.config.getIntSetting("heads", "price"))));
-        metrics.addCustomChart(new Metrics.SimplePie("head_max", () -> Integer.toString(this.config.getIntSetting("heads", "max"))));
-        metrics.addCustomChart(new Metrics.SimplePie("head_min", () -> Integer.toString(this.config.getIntSetting("heads", "min"))));
-        metrics.addCustomChart(new Metrics.SimplePie("heads_enabled", () -> Boolean.toString(this.config.getBooleanSetting("heads", "enabled"))));
-        metrics.addCustomChart(new Metrics.SimplePie("extra_heads_enabled", () -> Boolean.toString(this.config.getBooleanSetting("heads", "extraheads"))));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_price", () -> Integer.toString(this.config.getIntSetting("miniblocks", "price"))));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_max", () -> Integer.toString(this.config.getIntSetting("miniblocks", "max"))));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_min", () -> Integer.toString(this.config.getIntSetting("miniblocks", "min"))));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblocks_enabled", () -> Boolean.toString(this.config.getBooleanSetting("miniblocks", "enabled"))));
+        metrics.addCustomChart(new Metrics.SimplePie("head_price", () -> this.config.getStringSetting("heads", "price")));
+        metrics.addCustomChart(new Metrics.SimplePie("head_max", () -> this.config.getStringSetting("heads", "max")));
+        metrics.addCustomChart(new Metrics.SimplePie("head_min", () -> this.config.getStringSetting("heads", "min")));
+        metrics.addCustomChart(new Metrics.SimplePie("heads_enabled", () -> this.config.getStringSetting("heads", "enabled")));
+        metrics.addCustomChart(new Metrics.SimplePie("extra_heads_enabled", () -> this.config.getStringSetting("heads", "extraheads")));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_price", () -> this.config.getStringSetting("miniblocks", "price")));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_max", () -> this.config.getStringSetting("miniblocks", "max")));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_min", () -> this.config.getStringSetting("miniblocks", "min")));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblocks_enabled", () -> this.config.getStringSetting("miniblocks", "enabled")));
 
+    }
+
+    private void checkUpdates()
+    {
+        new UpdateChecker(this, 77477).getVersion(version -> {
+            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
+                //this.getLogger().info("There is not a new update available.");
+            } else {
+                this.getLogger().info("There is a new update for UsefulWandering Trader available, you should consider updating.");
+            }
+        });
     }
 }
