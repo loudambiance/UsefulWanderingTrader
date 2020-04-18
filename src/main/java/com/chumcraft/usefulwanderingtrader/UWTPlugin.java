@@ -38,6 +38,14 @@ public class UWTPlugin extends JavaPlugin {
         this.miniblocks = new Miniblocks(this);
         this.updateMetrics();
 
+        new UpdateChecker(this, 77477).getVersion(version -> {
+            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
+                //this.getLogger().info("There is not a new update available.");
+            } else {
+                this.getLogger().info("There is a new update for UsefulWandering Trader available, you should consider updating.");
+            }
+        });
+
         // Commands enabled with following method must have entries in plugin.yml
         getServer().getPluginManager().registerEvents(new WanderingTraderListener(this), this);
     }
