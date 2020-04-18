@@ -67,26 +67,16 @@ public class UWTPlugin extends JavaPlugin {
         Metrics metrics = new Metrics(this, bStatID);
 
         // Optional: Add custom charts
-        String playerheads = Integer.toString(this.playerheads.PlayerHeadList.size());
-        String headprice = Integer.toString(this.config.getIntSetting("heads", "price"));
-        String headmax = Integer.toString(this.config.getIntSetting("heads", "max"));
-        String headmin = Integer.toString(this.config.getIntSetting("heads", "min"));
-        String headenabled = Boolean.toString(this.config.getBooleanSetting("heads", "enabled"));
-        String extraheadsenabled = Boolean.toString(this.config.getBooleanSetting("heads", "extraheads"));
-        String miniblockprice = Integer.toString(this.config.getIntSetting("miniblocks", "price"));
-        String miniblockmax = Integer.toString(this.config.getIntSetting("miniblocks", "max"));
-        String miniblockmin = Integer.toString(this.config.getIntSetting("miniblocks", "min"));
-        String miniblockenabled = Boolean.toString(this.config.getBooleanSetting("miniblocks", "enabled"));
-        metrics.addCustomChart(new Metrics.SimplePie("player_heads", () -> playerheads));
-        metrics.addCustomChart(new Metrics.SimplePie("head_price", () -> headprice));
-        metrics.addCustomChart(new Metrics.SimplePie("head_max", () -> headmax));
-        metrics.addCustomChart(new Metrics.SimplePie("head_min", () -> headmin));
-        metrics.addCustomChart(new Metrics.SimplePie("heads_enabled", () -> headenabled));
-        metrics.addCustomChart(new Metrics.SimplePie("extra_heads_enabled", () -> extraheadsenabled));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_price", () -> miniblockprice));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_max", () -> miniblockmax));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblock_min", () -> miniblockmin));
-        metrics.addCustomChart(new Metrics.SimplePie("miniblocks_enabled", () -> miniblockenabled));
+        metrics.addCustomChart(new Metrics.SimplePie("player_heads", () -> Integer.toString(this.playerheads.PlayerHeadList.size())));
+        metrics.addCustomChart(new Metrics.SimplePie("head_price", () -> Integer.toString(this.config.getIntSetting("heads", "price"))));
+        metrics.addCustomChart(new Metrics.SimplePie("head_max", () -> Integer.toString(this.config.getIntSetting("heads", "max"))));
+        metrics.addCustomChart(new Metrics.SimplePie("head_min", () -> Integer.toString(this.config.getIntSetting("heads", "min"))));
+        metrics.addCustomChart(new Metrics.SimplePie("heads_enabled", () -> Boolean.toString(this.config.getBooleanSetting("heads", "enabled"))));
+        metrics.addCustomChart(new Metrics.SimplePie("extra_heads_enabled", () -> Boolean.toString(this.config.getBooleanSetting("heads", "extraheads"))));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_price", () -> Integer.toString(this.config.getIntSetting("miniblocks", "price"))));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_max", () -> Integer.toString(this.config.getIntSetting("miniblocks", "max"))));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblock_min", () -> Integer.toString(this.config.getIntSetting("miniblocks", "min"))));
+        metrics.addCustomChart(new Metrics.SimplePie("miniblocks_enabled", () -> Boolean.toString(this.config.getBooleanSetting("miniblocks", "enabled"))));
 
     }
 }
