@@ -4,7 +4,7 @@
   <groupId>com.chumcraft.usefulwanderingtrader</groupId>
   <artifactId>UsefulWanderingTrader</artifactId>
   <name>UsefulWanderingTrader</name>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <description>Spigot implementation of Vanilla Tweaks Wandering Trades.</description>
   <url>https://github.com/loudambiance/UsefulWanderingTrader</url>
   <build>
@@ -26,13 +26,6 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>2.4</version>
-        <configuration>
-          <finalName>${project.name}</finalName>
         </configuration>
       </plugin>
       <plugin>
