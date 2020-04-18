@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.chumcraft.usefulwanderingtrader</groupId>
     <artifactId>UsefulWanderingTrader</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
     <packaging>jar</packaging>
 
     <name>UsefulWanderingTrader</name>
@@ -29,6 +29,7 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.15.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bstats</groupId>
@@ -76,6 +77,7 @@
                 <version>3.1.0</version>
                 <!-- Do not include the <configuration>...</configuration> part if you are using Sponge! -->
                 <configuration>
+                    <minimizeJar>true</minimizeJar>
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
