@@ -50,10 +50,10 @@ public class UWTPlugin extends JavaPlugin {
         // Don't log enabling, Spigot does that for you automatically!
         UWTPlugin.plugin = this;
         this.config = new mainConfiguration();
-        this.playerheads = new PlayerHeads(new playerheadConfiguration());
-        this.miniblocks = new Miniblocks(new miniblockConfiguration());
-        this.hostileMobHeads = new HostileMobHeads(new hostilemobConfiguration());
-        this.passiveMobHeads = new PassiveMobHeads(new passivemobConfiguration());
+        this.playerheads = new PlayerHeads(this.config);
+        this.miniblocks = new Miniblocks(this.config);
+        this.hostileMobHeads = new HostileMobHeads(this.config);
+        this.passiveMobHeads = new PassiveMobHeads(this.config);
         this.updateMetrics();
         this.checkUpdates();
 
@@ -72,6 +72,14 @@ public class UWTPlugin extends JavaPlugin {
 
     public Miniblocks getMiniblocks() {
         return this.miniblocks;
+    }
+
+    public PassiveMobHeads getPassiveMobHeads() {
+        return this.passiveMobHeads;
+    }
+
+    public HostileMobHeads getHostileMobHeads() {
+        return this.hostileMobHeads;
     }
 
     private void updateMetrics() {

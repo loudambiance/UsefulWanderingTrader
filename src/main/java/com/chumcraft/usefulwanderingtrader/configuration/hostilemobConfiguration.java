@@ -20,6 +20,6 @@ package com.chumcraft.usefulwanderingtrader.configuration;
 public class hostilemobConfiguration extends Configuration {
 
     public hostilemobConfiguration(){
-        super("hotilemobheads.yml");
+        super("hostilemobheads.yml");
     }
 }

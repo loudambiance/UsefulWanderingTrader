@@ -20,5 +20,18 @@
                 "command": "clean install"
             }
         ],
+	},
+	"launch":{
+		"configurations": [
+			{
+				"type": "java",
+				"name": "Spigot",
+				"mainclass": "com.chumcraft.usefulwanderingtrader.UWTPlugin",
+				"request": "attach",
+				"hostName": "localhost",
+				"port": 5005
+			}
+		],
+		"compounds": []
 	}
 }

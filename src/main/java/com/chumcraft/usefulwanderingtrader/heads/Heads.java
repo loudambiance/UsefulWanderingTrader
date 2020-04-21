@@ -41,6 +41,26 @@ public abstract class Heads {
         this.headsConfig = headsConfig();
     }
 
+    public ConfigurationSection getConfigSection(){
+        return this.config.getConfigurationSection(this.sectionname);
+    }
+
+    public String getStringSetting(String setting)
+    {
+        ConfigurationSection configsection = this.getConfigSection();
+        return configsection.getString(setting);
+    }
+
+    public int getIntSetting(String setting){
+        ConfigurationSection configsection = this.getConfigSection();
+        return configsection.getInt(setting);
+    }
+
+    public boolean getBooleanSetting(String setting){
+        ConfigurationSection configsection = this.getConfigSection();
+        return configsection.getBoolean(setting); 
+    }    
+
     protected ArrayList<Head> getHeads()
     {
         Set<String> keys = this.headsConfig.getKeys(false);

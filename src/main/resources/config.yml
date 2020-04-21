@@ -43,3 +43,10 @@ passiveheads:
   stacksize: 1 # The number of items per trade for player heads
   restock: 0 # The number of restocks per player headsck item
   percentchance: 100 # percent chance that the trade shows up between 1 and 100
+
+combined:
+  combine: 0 # options 0 - none, 1 - all (player heads and mobs heads), 2 - passive and hostile mobs
+  max: 3
+  min: 1
+  percentchance: 100
+  quantity: 3

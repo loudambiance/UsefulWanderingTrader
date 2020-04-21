@@ -24,10 +24,15 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.WanderingTrader;
 import org.bukkit.inventory.MerchantRecipe;
+import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.Merchant;
+
 import java.util.List;
+import java.util.Random;
 
 import com.chumcraft.usefulwanderingtrader.heads.Head;
+import com.chumcraft.usefulwanderingtrader.heads.Heads;
 import com.chumcraft.usefulwanderingtrader.heads.Miniblock;
 
 import java.util.ArrayList;
@@ -41,64 +46,124 @@ public class WanderingTraderListener implements Listener
           this.plugin = UWTPlugin.getInstance();
      }
 
-
-     private List<MerchantRecipe> headTrades(List<MerchantRecipe> recipes)
+     private List<MerchantRecipe> trades(List<MerchantRecipe> recipes, Heads headsitem, Heads headsettings)
      {
-          int price = this.plugin.getConfiguration().getIntSetting("heads", "price");
-          int quantity = this.plugin.getConfiguration().getIntSetting("heads", "quantity");
-          String payment = this.plugin.getConfiguration().getStringSetting("heads", "payment");
-          ArrayList<Head> heads = this.plugin.getPlayerHeads().getRandomHeads();
+          int price = headsettings.getIntSetting("price");
+          int quantity = headsettings.getIntSetting("quantity");
+          int restock = headsettings.getIntSetting("restock");
+          String payment = headsettings.getStringSetting("payment");
+          boolean blockrequired = headsettings.getBooleanSetting("requireblock");
+          this.plugin.getLogger().info("Data: "+price+" : "+quantity+" : "+payment+";");
+          ArrayList<Head> headslist = headsitem.getRandomHeads();
           List<MerchantRecipe> newRecipes = new ArrayList<MerchantRecipe>();
-          for(Head head : heads){
+          for(Head head : headslist){
                MerchantRecipe recipe = new MerchantRecipe(head.skull, quantity);
-               List<ItemStack> newBuys = Arrays.asList(new ItemStack(Material.getMaterial(payment), price));
-               recipe.setIngredients(newBuys);
+               recipe.addIngredient(new ItemStack(Material.getMaterial(payment), price));
+               if(head instanceof Miniblock){
+                    if(blockrequired && ((Miniblock)head).block_quantity > 0){
+                         recipe.addIngredient(new ItemStack(((Miniblock)head).block, ((Miniblock)head).block_quantity));
+                    }
+               }
+               //recipe.setMaxUses(restock);
                newRecipes.add(recipe);
           }
           newRecipes.addAll(recipes);
           return newRecipes;
      }
 
-     private List<MerchantRecipe> miniBlockTrades(List<MerchantRecipe> recipes)
+     private List<MerchantRecipe> trades(List<MerchantRecipe> recipes, Heads heads)
      {
-          int price = this.plugin.getConfiguration().getIntSetting("miniblocks", "price");
-          int quantity = this.plugin.getConfiguration().getIntSetting("miniblocks", "quantity");
-          String payment = this.plugin.getConfiguration().getStringSetting("miniblocks", "payment");
-          boolean blockrequired = this.plugin.getConfiguration().getBooleanSetting("miniblocks", "requireblock");
-          ArrayList<Head> miniblocks = this.plugin.getMiniblocks().getRandomHeads();
-          List<MerchantRecipe> newRecipes = new ArrayList<MerchantRecipe>();
-          for(Head element : miniblocks){
-               Miniblock miniblock = (Miniblock) element;
-               MerchantRecipe recipe = new MerchantRecipe(miniblock.skull, quantity);
-               //List<ItemStack> newBuys = Arrays.asList(new ItemStack(Material.getMaterial(payment), price));
-               //newBuys.add(new ItemStack(miniblock.block, miniblock.block_quantity));
-               //recipe.setIngredients(newBuys);
-               recipe.addIngredient(new ItemStack(Material.getMaterial(payment), price));
-               if(blockrequired && miniblock.block_quantity > 0){
-                    recipe.addIngredient(new ItemStack(miniblock.block, miniblock.block_quantity));
-               }
-               newRecipes.add(recipe);
+          return trades(recipes, heads, heads);
+     }
+
+     private List<MerchantRecipe> combinedTrades(List<MerchantRecipe> recipes){
+          int quantity = this.plugin.getConfiguration().getIntSetting("combined", "quantity");
+          int max = this.plugin.getConfiguration().getIntSetting("combined", "max");
+          int min = this.plugin.getConfiguration().getIntSetting("combined", "min");
+          List<MerchantRecipe> ret = new ArrayList<MerchantRecipe>();
+          Random rand = new Random();
+          int numrecipes = rand.nextInt(max-min+1)+min;
+          int recipeListSize = recipes.size()-1;
+          if (recipeListSize < numrecipes ) {
+               return recipes;
           }
-          newRecipes.addAll(recipes);
-          return newRecipes;
+          int[] triedindexes = new int[numrecipes];
+          for(int k = 0; k<numrecipes&&k<recipeListSize; k++){
+               int newIndex = rand.nextInt(recipeListSize+1);
+               if(!Arrays.stream(triedindexes).anyMatch(i -> i == newIndex)){
+                    ret.add(recipes.get(newIndex));
+                    triedindexes[k] = newIndex;
+               }
+          }
+          for(MerchantRecipe recipe : ret){
+               recipe.setMaxUses(quantity);
+          }
+
+          return ret;
+          
      }
 
      @EventHandler
      public void onSpawn(CreatureSpawnEvent event)
      {
-          boolean headsenabled = this.plugin.getConfiguration().getBooleanSetting("heads", "enabled");
-          boolean miniblocksenabled = this.plugin.getConfiguration().getBooleanSetting("miniblocks", "enabled");
           if(event.getEntityType() == EntityType.WANDERING_TRADER){
+               boolean headsenabled = this.plugin.getPlayerHeads().getBooleanSetting("enabled");
+               boolean miniblocksenabled = this.plugin.getMiniblocks().getBooleanSetting("enabled");
+               boolean passivesenabled = this.plugin.getPassiveMobHeads().getBooleanSetting("enabled");
+               boolean hostileenabled = this.plugin.getHostileMobHeads().getBooleanSetting("enabled");
+               int combined = this.plugin.getConfiguration().getIntSetting("combined", "combine");
                WanderingTrader trader = (WanderingTrader)event.getEntity();
                List<MerchantRecipe> recipes = trader.getRecipes();
+               List<MerchantRecipe> recipescombined = new ArrayList<MerchantRecipe>();
                if(miniblocksenabled)
                {
-                    recipes = miniBlockTrades(recipes);
+                    recipes = trades(recipes,this.plugin.getMiniblocks());
                }
-               if(headsenabled){
-                    recipes = headTrades(recipes);
+               switch(combined)
+               {
+                    default:
+                    case 0:
+                         if(passivesenabled){
+                              recipes = trades(recipes,this.plugin.getPassiveMobHeads());;
+                         }
+                         if(hostileenabled){
+                              recipes = trades(recipes,this.plugin.getHostileMobHeads());;
+                         }
+                         if(headsenabled){
+                              recipes = trades(recipes,this.plugin.getPlayerHeads());;
+                         }
+                         break;
+                    case 1:
+                         if(passivesenabled){
+                              recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads());;
+                         }
+                         if(hostileenabled){
+                              recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads());;
+                         }
+                         if(headsenabled){
+                              recipescombined = trades(recipescombined,this.plugin.getPlayerHeads());;
+                         }
+                         recipescombined = combinedTrades(recipescombined);
+                         recipescombined.addAll(recipes);
+                         recipes.addAll(recipescombined);
+                         break;
+                    case 2:
+                         if(passivesenabled){
+                              recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads());;
+                         }
+                         if(hostileenabled){
+                              recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads());;
+                         }
+                         recipescombined = combinedTrades(recipescombined);
+                         recipescombined.addAll(recipes);
+                         recipes.addAll(recipescombined);
+                         if(headsenabled){
+                              recipes = trades(recipes,this.plugin.getPlayerHeads());;
+                         }
+                         break;
                }
                trader.setRecipes(recipes);
+
           }
      }
 }

@@ -33,8 +33,8 @@ public class PlayerHeads extends Heads{
     {
         super(config);
         this.sectionname = "heads";
-        loadHeads();
         this.headsConfig = headsConfig();
+        loadHeads();
     }
 
     @Override
