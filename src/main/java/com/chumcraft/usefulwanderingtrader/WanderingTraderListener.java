@@ -26,6 +26,10 @@ import org.bukkit.entity.WanderingTrader;
 import org.bukkit.inventory.MerchantRecipe;
 import org.bukkit.inventory.ItemStack;
 import java.util.List;
+
+import com.chumcraft.usefulwanderingtrader.heads.Head;
+import com.chumcraft.usefulwanderingtrader.heads.Miniblock;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -33,8 +37,8 @@ public class WanderingTraderListener implements Listener
 {
      private UWTPlugin plugin;
 
-     public WanderingTraderListener(UWTPlugin plugin){
-          this.plugin = plugin;
+     public WanderingTraderListener(){
+          this.plugin = UWTPlugin.getInstance();
      }
 
 
@@ -43,10 +47,10 @@ public class WanderingTraderListener implements Listener
           int price = this.plugin.getConfiguration().getIntSetting("heads", "price");
           int quantity = this.plugin.getConfiguration().getIntSetting("heads", "quantity");
           String payment = this.plugin.getConfiguration().getStringSetting("heads", "payment");
-          ArrayList<ItemStack> heads = this.plugin.getPlayerHeads().getRandomHeads();
+          ArrayList<Head> heads = this.plugin.getPlayerHeads().getRandomHeads();
           List<MerchantRecipe> newRecipes = new ArrayList<MerchantRecipe>();
-          for(ItemStack head : heads){
-               MerchantRecipe recipe = new MerchantRecipe(head, quantity);
+          for(Head head : heads){
+               MerchantRecipe recipe = new MerchantRecipe(head.skull, quantity);
                List<ItemStack> newBuys = Arrays.asList(new ItemStack(Material.getMaterial(payment), price));
                recipe.setIngredients(newBuys);
                newRecipes.add(recipe);
@@ -61,9 +65,10 @@ public class WanderingTraderListener implements Listener
           int quantity = this.plugin.getConfiguration().getIntSetting("miniblocks", "quantity");
           String payment = this.plugin.getConfiguration().getStringSetting("miniblocks", "payment");
           boolean blockrequired = this.plugin.getConfiguration().getBooleanSetting("miniblocks", "requireblock");
-          ArrayList<Miniblock> miniblocks = this.plugin.getMiniblocks().getRandomMiniBlock();
+          ArrayList<Head> miniblocks = this.plugin.getMiniblocks().getRandomHeads();
           List<MerchantRecipe> newRecipes = new ArrayList<MerchantRecipe>();
-          for(Miniblock miniblock : miniblocks){
+          for(Head element : miniblocks){
+               Miniblock miniblock = (Miniblock) element;
                MerchantRecipe recipe = new MerchantRecipe(miniblock.skull, quantity);
                //List<ItemStack> newBuys = Arrays.asList(new ItemStack(Material.getMaterial(payment), price));
                //newBuys.add(new ItemStack(miniblock.block, miniblock.block_quantity));

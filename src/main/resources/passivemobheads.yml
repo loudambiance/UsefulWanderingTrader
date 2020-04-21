@@ -1,0 +1,21 @@
+# Mob Heads configuration file
+#
+# To add a new mob, simply add a new configuration
+# section in the following format:
+# unique_mob_name:
+#   name: String - Name displayed to user
+#   texture: String - end of minecraft.net texture URL, can be found at minecraft-heads.com in 
+#                     the "Other" section.
+#   enabled: boolean (true/false) -  used to disable a block
+#
+#
+# Valid example -
+# sheep:
+#   name: sheep
+#   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
+#   enabled: 
+
+sheep:
+  name: Sheep
+  texture: b575a2691b96ed113d3741af38f75780737670d8ea8c27491366e5f254882cf0
+  enabled: true

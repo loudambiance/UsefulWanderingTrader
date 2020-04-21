@@ -22,7 +22,7 @@
  * 
  */
 
-package com.chumcraft.usefulwanderingtrader;
+package com.chumcraft.usefulwanderingtrader.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

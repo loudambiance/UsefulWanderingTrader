@@ -15,7 +15,7 @@
  * 
  */
 
-package com.chumcraft.usefulwanderingtrader;
+package com.chumcraft.usefulwanderingtrader.heads;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -27,7 +27,7 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class PlayerHeads {
+public class HostileMobHeads extends Heads {
 
     public ArrayList<ItemStack> PlayerHeadList = new ArrayList<ItemStack>();
     public ArrayList<String> playernames = new ArrayList<String>();

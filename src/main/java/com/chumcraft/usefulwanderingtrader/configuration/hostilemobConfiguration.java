@@ -15,24 +15,11 @@
  * 
  */
 
-package com.chumcraft.usefulwanderingtrader;
+package com.chumcraft.usefulwanderingtrader.configuration;
 
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
+public class hostilemobConfiguration extends Configuration {
 
-public class Miniblock {
-    public String name;
-    public String texture;
-    public Material block;
-    public int block_quantity;
-    public boolean enabled;
-    public ItemStack skull;
-
-    public Miniblock(String name, String texture, Material block, int block_quantity, boolean enabled){
-        this.name = name;
-        this.texture = texture;
-        this.block = block;
-        this.block_quantity = block_quantity;
-        this.enabled = enabled;
+    public hostilemobConfiguration(){
+        super("hotilemobheads.yml");
     }
 }

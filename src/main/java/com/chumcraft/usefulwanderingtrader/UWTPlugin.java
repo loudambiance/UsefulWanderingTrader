@@ -17,13 +17,27 @@
 
 package com.chumcraft.usefulwanderingtrader;
 
+import com.chumcraft.usefulwanderingtrader.configuration.*;
+import com.chumcraft.usefulwanderingtrader.heads.HostileMobHeads;
+import com.chumcraft.usefulwanderingtrader.heads.Miniblocks;
+import com.chumcraft.usefulwanderingtrader.heads.PassiveMobHead;
+import com.chumcraft.usefulwanderingtrader.heads.PlayerHeads;
+import com.chumcraft.usefulwanderingtrader.utils.UpdateChecker;
+
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class UWTPlugin extends JavaPlugin {
-    private Configuration config;
     private PlayerHeads playerheads;
     private Miniblocks miniblocks;
+    //private PassiveMobHeads passiveMobHeads;
+    //private HostileMobHeads hostileMobHeads;
+    private mainConfiguration config;
+    private static UWTPlugin plugin;
+
+    public static UWTPlugin getInstance(){
+        return UWTPlugin.plugin;
+    }
 
     @Override
     public void onDisable() {
@@ -33,15 +47,16 @@ public class UWTPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         // Don't log enabling, Spigot does that for you automatically!
-        this.config = new Configuration(this);
-        this.playerheads = new PlayerHeads(this);
-        this.miniblocks = new Miniblocks(this);
+        UWTPlugin.plugin = this;
+        this.config = new mainConfiguration();
+        this.playerheads = new PlayerHeads(new playerheadConfiguration());
+        this.miniblocks = new Miniblocks(new miniblockConfiguration());
         this.updateMetrics();
         this.checkUpdates();
 
 
         // Commands enabled with following method must have entries in plugin.yml
-        getServer().getPluginManager().registerEvents(new WanderingTraderListener(this), this);
+        getServer().getPluginManager().registerEvents(new WanderingTraderListener(), this);
     }
 
     public Configuration getConfiguration() {
@@ -61,7 +76,7 @@ public class UWTPlugin extends JavaPlugin {
         Metrics metrics = new Metrics(this, bStatID);
 
         // Optional: Add custom charts
-        metrics.addCustomChart(new Metrics.SimplePie("player_heads", () -> Integer.toString(this.playerheads.PlayerHeadList.size())));
+        metrics.addCustomChart(new Metrics.SimplePie("player_heads", () -> Integer.toString(this.playerheads.HeadList.size())));
         metrics.addCustomChart(new Metrics.SimplePie("head_price", () -> this.config.getStringSetting("heads", "price")));
         metrics.addCustomChart(new Metrics.SimplePie("head_max", () -> this.config.getStringSetting("heads", "max")));
         metrics.addCustomChart(new Metrics.SimplePie("head_min", () -> this.config.getStringSetting("heads", "min")));
@@ -71,7 +86,6 @@ public class UWTPlugin extends JavaPlugin {
         metrics.addCustomChart(new Metrics.SimplePie("miniblock_max", () -> this.config.getStringSetting("miniblocks", "max")));
         metrics.addCustomChart(new Metrics.SimplePie("miniblock_min", () -> this.config.getStringSetting("miniblocks", "min")));
         metrics.addCustomChart(new Metrics.SimplePie("miniblocks_enabled", () -> this.config.getStringSetting("miniblocks", "enabled")));
-
     }
 
     private void checkUpdates()

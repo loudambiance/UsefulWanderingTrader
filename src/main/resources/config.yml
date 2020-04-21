@@ -8,6 +8,7 @@ heads:
   stacksize: 1 # The number of items per trade for player heads
   restock: 0 # The number of restocks per player headsck item
   extraheads: true # load extra player heads from config file
+  percentchance: 100 # percent chance that the trade shows up between 1 and 100
 
 miniblocks:
   enabled: true
@@ -19,3 +20,26 @@ miniblocks:
   quantity: 1 # The number of trades per miniblock item
   stacksize: 8 # The number of items per trade for miniblocks
   restock: 0 # The number of restocks per miniblock item
+  percentchance: 100 # percent chance that the trade shows up between 1 and 100
+
+hostileheads:
+  enabled: false
+  payment: EMERALD # Primary type of payment
+  price: 1 # Cost per player head in primary type of payment
+  max: 3 # The max number of different player heads trades per Wandering Trader
+  min: 1 # The minimum number of different player heads trades per Wandering Trader
+  quantity: 3 # The number of trades per player heads item
+  stacksize: 1 # The number of items per trade for player heads
+  restock: 0 # The number of restocks per player headsck item
+  percentchance: 100 # percent chance that the trade shows up between 1 and 100
+
+passiveheads:
+  enabled: false
+  payment: EMERALD # Primary type of payment
+  price: 1 # Cost per player head in primary type of payment
+  max: 3 # The max number of different player heads trades per Wandering Trader
+  min: 1 # The minimum number of different player heads trades per Wandering Trader
+  quantity: 3 # The number of trades per player heads item
+  stacksize: 1 # The number of items per trade for player heads
+  restock: 0 # The number of restocks per player headsck item
+  percentchance: 100 # percent chance that the trade shows up between 1 and 100
