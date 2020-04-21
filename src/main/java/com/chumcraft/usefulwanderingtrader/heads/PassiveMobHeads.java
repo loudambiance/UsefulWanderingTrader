@@ -19,13 +19,29 @@ package com.chumcraft.usefulwanderingtrader.heads;
 
 import org.bukkit.configuration.ConfigurationSection;
 
-public class PassiveMobHead extends Head {
- 
-    public PassiveMobHead(String name, String texture, boolean enabled, int stacksize){
-        super(name, texture, enabled,stacksize);
+import com.chumcraft.usefulwanderingtrader.configuration.Configuration;
+import com.chumcraft.usefulwanderingtrader.configuration.passivemobConfiguration;
+
+import java.util.ArrayList;
+
+public class PassiveMobHeads extends Heads {
+
+    public PassiveMobHeads(Configuration config) 
+    {
+        super(config);
+        this.sectionname = "passiveheads";
+        loadHeads();
+        this.headsConfig = headsConfig();
     }
 
-    public PassiveMobHead(ConfigurationSection section){
-        super(section);
+    @Override
+    protected void getHeadsReturnAdd(ArrayList<Head> ret, ConfigurationSection section)
+    {
+        ret.add(new PassiveMobHead(section));
+    }
+
+    @Override
+    protected Configuration headsConfig(){
+        return new passivemobConfiguration();
     }
 }

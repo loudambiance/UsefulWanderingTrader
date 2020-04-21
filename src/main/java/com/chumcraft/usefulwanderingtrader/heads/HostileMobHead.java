@@ -17,9 +17,15 @@
 
 package com.chumcraft.usefulwanderingtrader.heads;
 
+import org.bukkit.configuration.ConfigurationSection;
+
 public class HostileMobHead extends Head {
 
-    public HostileMobHead(String name, String texture, boolean enabled) {
-        super(name, texture, enabled);
+    public HostileMobHead(String name, String texture, boolean enabled, int stacksize){
+        super(name, texture, enabled,stacksize);
+    }
+
+    public HostileMobHead(ConfigurationSection section){
+        super(section);
     }
 }

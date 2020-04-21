@@ -21,6 +21,7 @@ import com.chumcraft.usefulwanderingtrader.configuration.*;
 import com.chumcraft.usefulwanderingtrader.heads.HostileMobHeads;
 import com.chumcraft.usefulwanderingtrader.heads.Miniblocks;
 import com.chumcraft.usefulwanderingtrader.heads.PassiveMobHead;
+import com.chumcraft.usefulwanderingtrader.heads.PassiveMobHeads;
 import com.chumcraft.usefulwanderingtrader.heads.PlayerHeads;
 import com.chumcraft.usefulwanderingtrader.utils.UpdateChecker;
 
@@ -30,8 +31,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class UWTPlugin extends JavaPlugin {
     private PlayerHeads playerheads;
     private Miniblocks miniblocks;
-    //private PassiveMobHeads passiveMobHeads;
-    //private HostileMobHeads hostileMobHeads;
+    private PassiveMobHeads passiveMobHeads;
+    private HostileMobHeads hostileMobHeads;
     private mainConfiguration config;
     private static UWTPlugin plugin;
 
@@ -51,6 +52,8 @@ public class UWTPlugin extends JavaPlugin {
         this.config = new mainConfiguration();
         this.playerheads = new PlayerHeads(new playerheadConfiguration());
         this.miniblocks = new Miniblocks(new miniblockConfiguration());
+        this.hostileMobHeads = new HostileMobHeads(new hostilemobConfiguration());
+        this.passiveMobHeads = new PassiveMobHeads(new passivemobConfiguration());
         this.updateMetrics();
         this.checkUpdates();
 
