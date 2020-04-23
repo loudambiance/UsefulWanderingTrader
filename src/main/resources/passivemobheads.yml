@@ -15,7 +15,412 @@
 #   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
 #   enabled: 
 
-sheep:
-  name: Sheep
+Bat:
+  name: Bat
+  texture: 4cf1b3b3f539d2f63c172e94cacfaa391e8b385cdd633f3b991c74e44b28
+  enabled: true
+
+Tabby Cat:
+  name: Tabby Cat
+  texture: de28d30db3f8c3fe50ca4f26f3075e36f003ae8028135a8cd692f24c9a98ae1b
+  enabled: true
+
+Tuxedo Cat:
+  name: Tuxedo Cat
+  texture: 4fd10c8e75f67398c47587d25fc146f311c053cc5d0aeab8790bce36ee88f5f8
+  enabled: true
+
+Ginger Cat:
+  name: Ginger Cat
+  texture: 2113dbd3c6a078a17b4edb78ce07d836c38dace5027d4b0a83fd60e7ca7a0fcb
+  enabled: true
+
+Siamese Cat:
+  name: Siamese Cat
+  texture: d5b3f8ca4b3a555ccb3d194449808b4c9d783327197800d4d65974cc685af2ea
+  enabled: true
+
+British Shorthair Cat:
+  name: British Shorthair Cat
+  texture: 5389e0d5d3e81f84b570e2978244b3a73e5a22bcdb6874b44ef5d0f66ca24eec
+  enabled: true
+
+Calico Cat:
+  name: Calico Cat
+  texture: 340097271bb680fe981e859e8ba93fea28b813b1042bd277ea3329bec493eef3
+  enabled: true
+
+Persian Cat:
+  name: Persian Cat
+  texture: ff40c746260ef91c96b27159795e87191ae7ce3d5f767bf8c74faad9689af25d
+  enabled: true
+
+Ragdoll Cat:
+  name: Ragdoll Cat
+  texture: dc7a45d25889e3fdf7797cb258e26d4e94f5bc13eef00795dafef2e83e0ab511
+  enabled: true
+
+White Cat:
+  name: White Cat
+  texture: 21d15ac9558e98b89aca89d3819503f1c5256c2197dd3c34df5aac4d72e7fbed
+  enabled: true
+
+Jellie Cat:
+  name: Jellie Cat
+  texture: a0db41376ca57df10fcb1539e86654eecfd36d3fe75e8176885e93185df280a5
+  enabled: true
+
+Black Cat:
+  name: Black Cat
+  texture: 22c1e81ff03e82a3e71e0cd5fbec607e11361089aa47f290d46c8a2c07460d92
+  enabled: true
+
+Chicken:
+  name: Chicken
+  texture: 1638469a599ceef7207537603248a9ab11ff591fd378bea4735b346a7fae893
+  enabled: true
+
+Cod:
+  name: Cod
+  texture: 7892d7dd6aadf35f86da27fb63da4edda211df96d2829f691462a4fb1cab0
+  enabled: true
+
+Cow:
+  name: Cow
+  texture: 5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5
+  enabled: true
+
+Donkey:
+  name: Donkey
+  texture: dfb6c3c052cf787d236a2915f8072b77c547497715d1d2f8cbc9d241d88a
+  enabled: true
+
+Fox:
+  name: Fox
+  texture: d8954a42e69e0881ae6d24d4281459c144a0d5a968aed35d6d3d73a3c65d26a
+  enabled: true
+
+Snow Fox:
+  name: Snow Fox
+  texture: 41436377eb4c4b4e39fb0e1ed8899fb61ee1814a9169b8d08729ef01dc85d1ba
+  enabled: true
+
+White Horse:
+  name: White Horse
+  texture: 60a2db2f1eb93e5978d2dc91a74df43d7b75d9ec0e694fd7f2a652fbd15
+  enabled: true
+
+Creamy Horse:
+  name: Creamy Horse
+  texture: 628d1ab4be1e28b7b461fdea46381ac363a7e5c3591c9e5d2683fbe1ec9fcd3
+  enabled: true
+
+Chestnut Horse:
+  name: Chestnut Horse
+  texture: b66b2b32d31539c7383d923bae4faaf65da6715cd526c35d2e4e6825da11fb
+  enabled: true
+
+Brown Horse:
+  name: Brown Horse
+  texture: 8a5fabbcbc5481976fb938a519ead59eeee2a071df297384a8fe96788a9df5a6
+  enabled: true
+
+Black Horse:
+  name: Black Horse
+  texture: 64b7fc5f7a9ddfdd1aa79317410fc1929f91bddf98585938a2a56199a633cc
+  enabled: true
+
+Gray Horse:
+  name: Gray Horse
+  texture: 413813dd45ed0ef838448cf6f631c157c23f9650c5ae451e978a53383312fe
+  enabled: true
+
+Dark Brown Horse:
+  name: Dark Brown Horse
+  texture: 42eb967ab94fdd41a6325f1277d6dc019226e5cf34977eee69597fafcf5e
+  enabled: true
+
+Red Mooshroom:
+  name: Red Mooshroom
+  texture: d0bc61b9757a7b83e03cd2507a2157913c2cf016e7c096a4d6cf1fe1b8db
+  enabled: true
+
+Brown Mooshroom:
+  name: Brown Mooshroom
+  texture: 8501708e2c00a605a988c419af70c1617ce5688628b7413cfd37038ec0221abc
+  enabled: true
+
+Mule:
+  name: Mule
+  texture: a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f
+  enabled: true
+
+Ocelot:
+  name: Ocelot
+  texture: 5657cd5c2989ff97570fec4ddcdc6926a68a3393250c1be1f0b114a1db1
+  enabled: true
+
+Red Parrot:
+  name: Red Parrot
+  texture: a4ba8d66fecb1992e94b8687d6ab4a5320ab7594ac194a2615ed4df818edbc3
+  enabled: true
+
+Blue Parrot:
+  name: Blue Parrot
+  texture: aca580b051c63be29da545a9aa7ff7e136df77a81c67dc1ee9e6170c14fb310
+  enabled: true
+
+Green Parrot:
+  name: Green Parrot
+  texture: ab9a36c5589f3a2e59c1caa9b3b88fada76732bdb4a7926388a8c088bbbcb
+  enabled: true
+
+Cyan Parrot:
+  name: Cyan Parrot
+  texture: 2b94f236c4a642eb2bcdc3589b9c3c4a0b5bd5df9cd5d68f37f8c83f8e3f1
+  enabled: true
+
+Gray Parrot:
+  name: Gray Parrot
+  texture: 3d6f4a21e0d62af824f8708ac63410f1a01bbb41d7f4a702d9469c6113222
+  enabled: true
+
+Pig:
+  name: Pig
+  texture: 621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
+  enabled: true
+
+Pufferfish:
+  name: Pufferfish
+  texture: a9559388993fe782f67bd58d98c4df56bcd430edcb2f66ef5777a73c27de3
+  enabled: true
+
+Toast:
+  name: Toast
+  texture: 32fc3b74666545f2d41bc2b5340e1df69dd25e2a7e2b34efd1a95311a7d6c
+  enabled: true
+
+Brown Rabbit:
+  name: Brown Rabbit
+  texture: 7d1169b2694a6aba826360992365bcda5a10c89a3aa2b48c438531dd8685c3a7
+  enabled: true
+
+White Rabbit:
+  name: White Rabbit
+  texture: 9542d7160987148a5d8e20e469bd9b3c2a3946c7fb5923f55b9beae99185f
+  enabled: true
+
+Black Rabbit:
+  name: Black Rabbit
+  texture: 72c58116a147d1a9a26269224a8be184fe8e5f3f3df9b61751369ad87382ec9
+  enabled: true
+
+Black and White Rabbit:
+  name: Black and White Rabbit
+  texture: cb8cff4b15b8ca37e25750f345718f289cb22c5b3ad22627a71223faccc
+  enabled: true
+
+Gold Rabbit:
+  name: Gold Rabbit
+  texture: c977a3266bf3b9eaf17e5a02ea5fbb46801159863dd288b93e6c12c9cb
+  enabled: true
+
+Salt and Pepper Rabbit:
+  name: Salt and Pepper Rabbit
+  texture: ffecc6b5e6ea5ced74c46e7627be3f0826327fba26386c6cc7863372e9bc
+  enabled: true
+
+The Killer Bunny:
+  name: The Killer Bunny
+  texture: 1f59851de93f4c6547f809ca3aed189e94bbf4f888f1f75208e94c3733852a1
+  enabled: true
+
+Salmon:
+  name: Salmon
+  texture: adfc57d09059e4799fa92c15e28512bcfaa1315577fe3a27aed389e4f752289a
+  enabled: true
+
+Black Sheep:
+  name: Black Sheep
+  texture: 32652083f28ed1b61f9b965df1abf010f234681c21435951c67d88364749822
+  enabled: true
+
+Blue Sheep:
+  name: Blue Sheep
+  texture: d9ec22818d1fbfc8167fbe36728b28240e34e16469a2929d03fdf511bf2ca1
+  enabled: true
+
+Brown Sheep:
+  name: Brown Sheep
+  texture: a55ad6e5db5692d87f51511f4e09b39ff9ccb3de7b4819a7378fce8553b8
+  enabled: true
+
+Cyan Sheep:
+  name: Cyan Sheep
+  texture: 46f6c7e7fd514ce0acc68593229e40fcc4352b841646e4f0ebcccb0ce23d16
+  enabled: true
+
+Gray Sheep:
+  name: Gray Sheep
+  texture: 4287eb501391f275389f166ec9febea75ec4ae951b88b38cae87df7e24f4c
+  enabled: true
+
+Green Sheep:
+  name: Green Sheep
+  texture: a017215c7f8db82040aa2c47298b66541c2eb5f7f93040a5d23d88f0687d4b34
+  enabled: true
+
+Jeb_ Sheep:
+  name: Jeb_ Sheep
+  texture: 6c4cbf2dac42de3b2cbfd0aa1dc40363b6d3d5b5736b2a788c05d1b4abb19e7
+  enabled: true
+
+Light Blue Sheep:
+  name: Light Blue Sheep
+  texture: 1c8a97a38856514a16413e2c99521289f4c5363dc82fc9b2834cfedac78b89
+  enabled: true
+
+Light Gray Sheep:
+  name: Light Gray Sheep
+  texture: ce1ac683993be35512e1be31d1f4f98e583edb1658a9e21192c9b23b5cccdc3
+  enabled: true
+
+Lime Sheep:
+  name: Lime Sheep
+  texture: 92a2448f58a491332434e85c45d786d874397e830a3a7894e6d92699c42b30
+  enabled: true
+
+Magenta Sheep:
+  name: Magenta Sheep
+  texture: 1836565c7897d49a71bc18986d1ea6561321a0bbf711d41a56ce3bb2c217e7a
+  enabled: true
+
+Orange Sheep:
+  name: Orange Sheep
+  texture: f098397a270b4c3d2b1e574b8cfd3cc4ea3409066cefe31ea993633c9d576
+  enabled: true
+
+Pink Sheep:
+  name: Pink Sheep
+  texture: 2ac74a2b9b91452e56fa1dda5db81077856e49f27c6e2de1e841e5c95a6fc5ab
+  enabled: true
+
+Purple Sheep:
+  name: Purple Sheep
+  texture: ae52867afef38bb14a26d1426c8c0f116ad34761acd92e7aae2c819a0d55b85
+  enabled: true
+
+Red Sheep:
+  name: Red Sheep
+  texture: 839af477eb627815f723a5662556ec9dfcbab5d494d338bd214232f23e446
+  enabled: true
+
+White Sheep:
+  name: White Sheep
   texture: f31f9ccc6b3e32ecf13b8a11ac29cd33d18c95fc73db8a66c5d657ccb8be70
+  enabled: true
+
+Yellow Sheep:
+  name: Yellow Sheep
+  texture: 26a4112df1e4bce2a5e28417f3aaff79cd66e885c3724554102cef8eb8
+  enabled: true
+
+Skeleton Horse:
+  name: Skeleton Horse
+  texture: 47effce35132c86ff72bcae77dfbb1d22587e94df3cbc2570ed17cf8973a
+  enabled: true
+
+Squid:
+  name: Squid
+  texture: 01433be242366af126da434b8735df1eb5b3cb2cede39145974e9c483607bac
+  enabled: true
+
+Tropical Fish:
+  name: Tropical Fish
+  texture: 36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df
+  enabled: true
+
+Turtle:
+  name: Turtle
+  texture: 0a4050e7aacc4539202658fdc339dd182d7e322f9fbcc4d5f99b5718a
+  enabled: true
+
+Armorer Villager:
+  name: Armorer Villager
+  texture: 1ef627f566ac0a7828bad93e9e4b9643d99a928a13d5f977bf441e40db1336bf
+  enabled: true
+
+Butcher Villager:
+  name: Butcher Villager
+  texture: a1bad64185e04bf1dafe3da84933d02545ea4a63221a10d0f07759179112bdc2
+  enabled: true
+
+Cartographer Villager:
+  name: Cartographer Villager
+  texture: e3aecfbe801cf32b5d1b0b1f6680049666158678c53f4a651fc83e0df9d3738b
+  enabled: true
+
+Cleric Villager:
+  name: Cleric Villager
+  texture: 5b9e582e2f9b89d556e79c4697f706b1dd4929ecae3c07ee90bf1d5be319bf6f
+  enabled: true
+
+Farmer Villager:
+  name: Farmer Villager
+  texture: d9272d03cda6290e4d925a7e850a745e711fe5760f6f06f93d92b8f8c739db07
+  enabled: true
+
+Fisherman Villager:
+  name: Fisherman Villager
+  texture: d189fb4acd15d73ff2a58a88df0466ad9f4c154a2008e5c6265d5c2f07d39376
+  enabled: true
+
+Fletcher Villager:
+  name: Fletcher Villager
+  texture: bf611f12e18ce44a57238eef1cae03cd9f730a7a45e0ec248f14ce84e9c48056
+  enabled: true
+
+Leatherworker Villager:
+  name: Leatherworker Villager
+  texture: ae0e9591e11aaef4c2c51d9ac69514e340485defcc2c12c38cd12386c2ec6b78
+  enabled: true
+
+Librarian Villager:
+  name: Librarian Villager
+  texture: cdcaa574babb40ee0fa83f2fd5ea20cff31ffa272fe113588ceee469682128e7
+  enabled: true
+
+Mason Villager:
+  name: Mason Villager
+  texture: ae0e9591e11aaef4c2c51d9ac69514e340485defcc2c12c38cd12386c2ec6b78
+  enabled: true
+
+Nitwit Villager:
+  name: Nitwit Villager
+  texture: ae0e9591e11aaef4c2c51d9ac69514e340485defcc2c12c38cd12386c2ec6b78
+  enabled: true
+
+Unemployed Villager:
+  name: Unemployed Villager
+  texture: ae0e9591e11aaef4c2c51d9ac69514e340485defcc2c12c38cd12386c2ec6b78
+  enabled: true
+
+Shepherd Villager:
+  name: Shepherd Villager
+  texture: 2abf4e9154ac9271941c733eacc62dc9fc0a6dc1b5d67c78ca98afb5cb1be9b2
+  enabled: true
+
+Toolsmith Villager:
+  name: Toolsmith Villager
+  texture: ae0e9591e11aaef4c2c51d9ac69514e340485defcc2c12c38cd12386c2ec6b78
+  enabled: true
+
+Weaponsmith Villager:
+  name: Weaponsmith Villager
+  texture: 8476ffa410bbe7fa70909965a125f4a4e9a4fb1ce1b8b3c34bfb73aaffd4ce43
+  enabled: true
+
+Wandering Trader:
+  name: Wandering Trader
+  texture: 5f1379a82290d7abe1efaabbc70710ff2ec02dd34ade386bc00c930c461cf932
   enabled: true

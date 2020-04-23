@@ -7,4 +7,12 @@ api-version: 1.14
 
 main: ${mainClass}
 
-permissions: {}
+commands:
+   uwtreload:
+      description: Allows reload of Useful Wandering Trader config
+      usage: /uwtreload
+
+permissions:
+  uwtreload:
+    description: Allows reload of Useful Wandering Trader config
+    default: op

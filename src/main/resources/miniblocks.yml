@@ -94,14 +94,14 @@ bedrock:
 bee_hive:
   name: Bee Hive
   texture: b64169076dbdb87f279448d5a16ff78bb0a2b57503c218e21732dba9f7f9f55a
-  block: BEE_HIVE
+  block: BEEHIVE
   block_quantity: 1
   enabled: true
 
 full_bee_hive:
   name: Full Bee Hive
   texture: 88625b5201d95b1079b1b9edd4ced6fc7012763c0ff1d0d3281814a5e7acfe79
-  block: BEE_HIVE
+  block: BEEHIVE
   block_quantity: 1
   enabled: true
 
@@ -1693,7 +1693,6 @@ quartz_pillar_rotated:
   block: QUARTZ_PILLAR
   block_quantity: 1
   enabled: true
-
 
 red_concrete:
   name: Red Concrete

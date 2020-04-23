@@ -20,7 +20,7 @@ package com.chumcraft.usefulwanderingtrader;
 import com.chumcraft.usefulwanderingtrader.configuration.*;
 import com.chumcraft.usefulwanderingtrader.heads.HostileMobHeads;
 import com.chumcraft.usefulwanderingtrader.heads.Miniblocks;
-import com.chumcraft.usefulwanderingtrader.heads.PassiveMobHead;
+import com.chumcraft.usefulwanderingtrader.heads.NeutralMobHeads;
 import com.chumcraft.usefulwanderingtrader.heads.PassiveMobHeads;
 import com.chumcraft.usefulwanderingtrader.heads.PlayerHeads;
 import com.chumcraft.usefulwanderingtrader.utils.UpdateChecker;
@@ -33,6 +33,7 @@ public class UWTPlugin extends JavaPlugin {
     private Miniblocks miniblocks;
     private PassiveMobHeads passiveMobHeads;
     private HostileMobHeads hostileMobHeads;
+    private NeutralMobHeads neutralMobHeads;
     private mainConfiguration config;
     private static UWTPlugin plugin;
 
@@ -49,17 +50,23 @@ public class UWTPlugin extends JavaPlugin {
     public void onEnable() {
         // Don't log enabling, Spigot does that for you automatically!
         UWTPlugin.plugin = this;
-        this.config = new mainConfiguration();
-        this.playerheads = new PlayerHeads(this.config);
-        this.miniblocks = new Miniblocks(this.config);
-        this.hostileMobHeads = new HostileMobHeads(this.config);
-        this.passiveMobHeads = new PassiveMobHeads(this.config);
+        load();
         this.updateMetrics();
         this.checkUpdates();
 
 
         // Commands enabled with following method must have entries in plugin.yml
+        this.getCommand("uwtreload").setExecutor(new UWTReload(this));
         getServer().getPluginManager().registerEvents(new WanderingTraderListener(), this);
+    }
+
+    public void load(){
+        this.config = new mainConfiguration();
+        this.playerheads = new PlayerHeads(this.config);
+        this.miniblocks = new Miniblocks(this.config);
+        this.hostileMobHeads = new HostileMobHeads(this.config);
+        this.passiveMobHeads = new PassiveMobHeads(this.config);
+        this.neutralMobHeads = new NeutralMobHeads(this.config);
     }
 
     public Configuration getConfiguration() {
@@ -80,6 +87,10 @@ public class UWTPlugin extends JavaPlugin {
 
     public HostileMobHeads getHostileMobHeads() {
         return this.hostileMobHeads;
+    }
+
+    public NeutralMobHeads getNeutralMobHeads() {
+        return this.neutralMobHeads;
     }
 
     private void updateMetrics() {

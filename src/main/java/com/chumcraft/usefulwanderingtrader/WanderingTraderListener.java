@@ -24,9 +24,7 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.WanderingTrader;
 import org.bukkit.inventory.MerchantRecipe;
-import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.Merchant;
 
 import java.util.List;
 import java.util.Random;
@@ -53,7 +51,6 @@ public class WanderingTraderListener implements Listener
           int restock = headsettings.getIntSetting("restock");
           String payment = headsettings.getStringSetting("payment");
           boolean blockrequired = headsettings.getBooleanSetting("requireblock");
-          this.plugin.getLogger().info("Data: "+price+" : "+quantity+" : "+payment+";");
           ArrayList<Head> headslist = headsitem.getRandomHeads();
           List<MerchantRecipe> newRecipes = new ArrayList<MerchantRecipe>();
           for(Head head : headslist){
@@ -61,7 +58,13 @@ public class WanderingTraderListener implements Listener
                recipe.addIngredient(new ItemStack(Material.getMaterial(payment), price));
                if(head instanceof Miniblock){
                     if(blockrequired && ((Miniblock)head).block_quantity > 0){
-                         recipe.addIngredient(new ItemStack(((Miniblock)head).block, ((Miniblock)head).block_quantity));
+                         try{
+                              recipe.addIngredient(new ItemStack(((Miniblock)head).block, ((Miniblock)head).block_quantity));
+                         }
+                         catch(Exception e){
+                              this.plugin.getLogger().warning(((Miniblock)head).name);
+                              this.plugin.getLogger().warning(e.getStackTrace().toString());
+                         }
                     }
                }
                //recipe.setMaxUses(restock);
@@ -71,9 +74,16 @@ public class WanderingTraderListener implements Listener
           return newRecipes;
      }
 
-     private List<MerchantRecipe> trades(List<MerchantRecipe> recipes, Heads heads)
+     private List<MerchantRecipe> trades(List<MerchantRecipe> recipes, Heads heads, boolean enabled)
      {
-          return trades(recipes, heads, heads);
+          Random r = new Random();
+          int chance = r.nextInt(100)+1;
+          int percentage = heads.getIntSetting("percentchance");
+          if(enabled && (chance <= percentage)){
+               return trades(recipes, heads, heads);
+          }else{
+               return recipes;
+          }
      }
 
      private List<MerchantRecipe> combinedTrades(List<MerchantRecipe> recipes){
@@ -111,55 +121,38 @@ public class WanderingTraderListener implements Listener
                boolean miniblocksenabled = this.plugin.getMiniblocks().getBooleanSetting("enabled");
                boolean passivesenabled = this.plugin.getPassiveMobHeads().getBooleanSetting("enabled");
                boolean hostileenabled = this.plugin.getHostileMobHeads().getBooleanSetting("enabled");
+               boolean neutralenabled = this.plugin.getNeutralMobHeads().getBooleanSetting("enabled");
                int combined = this.plugin.getConfiguration().getIntSetting("combined", "combine");
                WanderingTrader trader = (WanderingTrader)event.getEntity();
                List<MerchantRecipe> recipes = trader.getRecipes();
                List<MerchantRecipe> recipescombined = new ArrayList<MerchantRecipe>();
-               if(miniblocksenabled)
-               {
-                    recipes = trades(recipes,this.plugin.getMiniblocks());
-               }
+               recipes = trades(recipes,this.plugin.getMiniblocks(), miniblocksenabled);
                switch(combined)
                {
                     default:
                     case 0:
-                         if(passivesenabled){
-                              recipes = trades(recipes,this.plugin.getPassiveMobHeads());;
-                         }
-                         if(hostileenabled){
-                              recipes = trades(recipes,this.plugin.getHostileMobHeads());;
-                         }
-                         if(headsenabled){
-                              recipes = trades(recipes,this.plugin.getPlayerHeads());;
-                         }
+                         recipes = trades(recipes,this.plugin.getPassiveMobHeads(), passivesenabled);
+                         recipes = trades(recipes,this.plugin.getNeutralMobHeads(), neutralenabled);
+                         recipes = trades(recipes,this.plugin.getHostileMobHeads(), hostileenabled);
+                         recipes = trades(recipes,this.plugin.getPlayerHeads(), headsenabled);
                          break;
                     case 1:
-                         if(passivesenabled){
-                              recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads());;
-                         }
-                         if(hostileenabled){
-                              recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads());;
-                         }
-                         if(headsenabled){
-                              recipescombined = trades(recipescombined,this.plugin.getPlayerHeads());;
-                         }
+                         recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads(), passivesenabled);
+                         recipescombined = trades(recipescombined,this.plugin.getNeutralMobHeads(), neutralenabled);
+                         recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads(), hostileenabled);
+                         recipescombined = trades(recipescombined,this.plugin.getPlayerHeads(), headsenabled);
                          recipescombined = combinedTrades(recipescombined);
                          recipescombined.addAll(recipes);
-                         recipes.addAll(recipescombined);
+                         recipes = recipescombined;
                          break;
                     case 2:
-                         if(passivesenabled){
-                              recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads());;
-                         }
-                         if(hostileenabled){
-                              recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads());;
-                         }
+                         recipescombined = trades(recipescombined,this.plugin.getPassiveMobHeads(), passivesenabled);
+                         recipescombined = trades(recipescombined,this.plugin.getNeutralMobHeads(), neutralenabled);
+                         recipescombined = trades(recipescombined,this.plugin.getHostileMobHeads(),hostileenabled);
                          recipescombined = combinedTrades(recipescombined);
                          recipescombined.addAll(recipes);
-                         recipes.addAll(recipescombined);
-                         if(headsenabled){
-                              recipes = trades(recipes,this.plugin.getPlayerHeads());;
-                         }
+                         recipes = recipescombined;
+                         recipes = trades(recipes,this.plugin.getPlayerHeads(), headsenabled);
                          break;
                }
                trader.setRecipes(recipes);

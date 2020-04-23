@@ -23,7 +23,18 @@ miniblocks:
   percentchance: 100 # percent chance that the trade shows up between 1 and 100
 
 hostileheads:
-  enabled: false
+  enabled: true
+  payment: EMERALD # Primary type of payment
+  price: 1 # Cost per hostile mob head in primary type of payment
+  max: 3 # The max number of different hostile mob heads trades per Wandering Trader
+  min: 1 # The minimum number of different hostile mob heads trades per Wandering Trader
+  quantity: 3 # The number of trades per hostile mob heads item
+  stacksize: 1 # The number of items per trade for hostile mob heads
+  restock: 0 # The number of restocks per hostile mob headsck item
+  percentchance: 100 # percent chance that the trade shows up between 1 and 100
+
+passiveheads:
+  enabled: true
   payment: EMERALD # Primary type of payment
   price: 1 # Cost per player head in primary type of payment
   max: 3 # The max number of different player heads trades per Wandering Trader
@@ -33,8 +44,8 @@ hostileheads:
   restock: 0 # The number of restocks per player headsck item
   percentchance: 100 # percent chance that the trade shows up between 1 and 100
 
-passiveheads:
-  enabled: false
+neutralheads:
+  enabled: true
   payment: EMERALD # Primary type of payment
   price: 1 # Cost per player head in primary type of payment
   max: 3 # The max number of different player heads trades per Wandering Trader
@@ -45,7 +56,10 @@ passiveheads:
   percentchance: 100 # percent chance that the trade shows up between 1 and 100
 
 combined:
-  combine: 0 # options 0 - none, 1 - all (player heads and mobs heads), 2 - passive and hostile mobs
+  # 0 - none
+  # 1 - all (player heads and mobs heads)
+  # 2 - passive, hostile mobs and neutral mobs
+  combine: 2
   max: 3
   min: 1
   percentchance: 100

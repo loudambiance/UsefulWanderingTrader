@@ -1,0 +1,151 @@
+# Mob Heads configuration file
+#
+# To add a new mob, simply add a new configuration
+# section in the following format:
+# unique_mob_name:
+#   name: String - Name displayed to user
+#   texture: String - end of minecraft.net texture URL, can be found at minecraft-heads.com in 
+#                     the "Other" section.
+#   enabled: boolean (true/false) -  used to disable a block
+#
+#
+# Valid example -
+# sheep:
+#   name: sheep
+#   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
+#   enabled: 
+
+Bee:
+  name: Bee
+  texture: 59ac16f296b461d05ea0785d477033e527358b4f30c266aa02f020157ffca736
+  enabled: true
+
+Pollinated Bee:
+  name: Pollinated Bee
+  texture: b727d0ab03f5cd022f8705d3f7f133ca4920eae8e1e47b5074433a137e691e4e
+  enabled: true
+
+Angry Bee:
+  name: Angry Bee
+  texture: e400223f1fa54741d421d7e8046409d5f3e15c7f4364b1b739940208f3b686d4
+  enabled: true
+
+Angry Pollinated Bee:
+  name: Angry Pollinated Bee
+  texture: e6b74e052b74288799ba6d9f35c5d0221cf8b04331547ec2f68d73597ae2c9b
+  enabled: true
+
+Dolphin:
+  name: Dolphin
+  texture: 8e9688b950d880b55b7aa2cfcd76e5a0fa94aac6d16f78e833f7443ea29fed3
+  enabled: true
+
+Iron Golem:
+  name: Iron Golem
+  texture: 89091d79ea0f59ef7ef94d7bba6e5f17f2f7d4572c44f90f76c4819a714
+  enabled: true
+
+Creamy Llama:
+  name: Creamy Llama
+  texture: 4d67fd4bff293269cb908974dca83c33485e435ed5a8e1dbd6521c61687140
+  enabled: true
+
+White Llama:
+  name: White Llama
+  texture: 80277e6b3d9f7819efc7da4b42745f7ab9a63ba8f36d6b84a7a250c6d1a358eb
+  enabled: true
+
+Brown Llama:
+  name: Brown Llama
+  texture: c2b1ecff77ffe3b503c30a548eb23a1a08fa26fd67cdff389855d74921368
+  enabled: true
+
+Gray Llama:
+  name: Gray Llama
+  texture: cf24e56fd9ffd7133da6d1f3e2f455952b1da462686f753c597ee82299a
+  enabled: true
+
+Creamy Trader Llama:
+  name: Creamy Trader Llama
+  texture: e89a2eb17705fe7154ab041e5c76a08d41546a31ba20ea3060e3ec8edc10412c
+  enabled: true
+
+White Trader Llama:
+  name: White Trader Llama
+  texture: 7087a556d4ffa95ecd2844f350dc43e254e5d535fa596f540d7e77fa67df4696
+  enabled: true
+
+Brown Trader Llama:
+  name: Brown Trader Llama
+  texture: 8424780b3c5c5351cf49fb5bf41fcb289491df6c430683c84d7846188db4f84d
+  enabled: true
+
+Gray Trader Llama:
+  name: Gray Trader Llama
+  texture: be4d8a0bc15f239921efd8be3480ba77a98ee7d9ce00728c0d733f0a2d614d16
+  enabled: true
+
+Aggressive Panda:
+  name: Aggressive Panda
+  texture: 2e2f393f3b28ae5578d68ea72f34b0aa4f5f2c583a22d8983467b98c4b23d86c
+  enabled: true
+
+Lazy Panda:
+  name: Lazy Panda
+  texture: 7818b681cace1c641919f53edadecb142330d089a826b56219138c33b7a5e0db
+  enabled: true
+
+Playful Panda:
+  name: Playful Panda
+  texture: b6463e64ce29764db3cb46806cee606afc24bdf0ce14b6660c270a96c787426
+  enabled: true
+
+Worried Panda:
+  name: Worried Panda
+  texture: c8e921c57e54dd07337ffba629e72caf3850d836b76562b1bc3bc5949f2d41d
+  enabled: true
+
+Brown Panda:
+  name: Brown Panda
+  texture: c5d0d45bf992b072cf5c513e06beefe8bdc809c8150f3d14b883796a7b74e406
+  enabled: true
+
+Weak Panda:
+  name: Weak Panda
+  texture: 5c2d25e956337d82791fa0e6617a40086f02d6ebfbfd5a6459889cf206fca787
+  enabled: true
+
+Panda:
+  name: Panda
+  texture: dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+  enabled: true
+
+Polar Bear:
+  name: Polar Bear
+  texture: d46d23f04846369fa2a3702c10f759101af7bfe8419966429533cd81a11d2b
+  enabled: true
+
+Wolf:
+  name: Wolf
+  texture: e95cbb4f75ea87617f2f713c6d49dac3209ba1bd4b9369654b1459ea15317
+  enabled: true
+
+Zombie Pigman:
+  name: Zombie Pigman
+  texture: 74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb
+  enabled: true
+
+Cave Spider:
+  name: Cave Spider
+  texture: 41645dfd77d09923107b3496e94eeb5c30329f97efc96ed76e226e98224
+  enabled: true
+
+Enderman:
+  name: Enderman
+  texture: 7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+  enabled: true
+
+Spider:
+  name: Spider
+  texture: cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
+  enabled: true

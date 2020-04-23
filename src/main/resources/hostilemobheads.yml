@@ -15,7 +15,212 @@
 #   texture: ee9640186a709377881009848ec7ebda819eb18c4e5967ae1d0ac7146afb4b4e
 #   enabled: 
 
+Blaze:
+  name: Blaze
+  texture: b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0
+  enabled: true
+
+creeper:
+  name: creeper
+  texture: f4254838c33ea227ffca223dddaabfe0b0215f70da649e944477f44370ca6952
+  enabled: true
+
+Charged Creeper:
+  name: Charged Creeper
+  texture: f2ceb39dd4de24a7adfe291a3a0cfc7cf4f645de59b603fcfe06c6b5a06e26
+  enabled: true
+
+Drowned:
+  name: Drowned
+  texture: c3f7ccf61dbc3f9fe9a6333cde0c0e14399eb2eea71d34cf223b3ace22051
+  enabled: true
+
+Elder Guardian:
+  name: Elder Guardian
+  texture: 1c797482a14bfcb877257cb2cff1b6e6a8b8413336ffb4c29a6139278b436b
+  enabled: true
+
+Endermite:
+  name: Endermite
+  texture: 84aaffa4c09e2eafb85d3522122db0aa45874bea4e3f5e7566b4d166c7df8
+  enabled: true
+
+Evoker:
+  name: Evoker
+  texture: 630ce775edb65db8c2741bdfae84f3c0d0285aba93afadc74900d55dfd9504a5
+  enabled: true
+
+Ghast:
+  name: Ghast
+  texture: 8b6a72138d69fbbd2fea3fa251cabd87152e4f1c97e5f986bf685571db3cc0
+  enabled: true
+
+Guardian:
+  name: Guardian
+  texture: dfb675cb5a7e3fd25e29da8258f24fc020b3fa950362b8bc8eb252e56e74
+  enabled: true
+
+Husk:
+  name: Husk
+  texture: 7770681d1a255fb4f754793aa055b220441cdab9e1141dfa5237b49931d9b91c
+  enabled: true
+
+Illusioner:
+  name: Illusioner
+  texture: 512512e7d016a2343a7bff1a4cd15357ab851579f1389bd4e3a24cbeb88b
+  enabled: true
+
+Magma Cube:
+  name: Magma Cube
+  texture: 38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429
+  enabled: true
+
+Phantom:
+  name: Phantom
+  texture: 7e95153ec23284b283f00d19d29756f244313a061b70ac03b97d236ee57bd982
+  enabled: true
+
+Pillager:
+  name: Pillager
+  texture: 4aee6bb37cbfc92b0d86db5ada4790c64ff4468d68b84942fde04405e8ef5333
+  enabled: true
+
+Ravager:
+  name: Ravager
+  texture: 1cb9f139f9489d86e410a06d8cbc670c8028137508e3e4bef612fe32edd60193
+  enabled: true
+
+shulker:
+  name: shulker
+  texture: 1433a4b73273a64c8ab2830b0fff777a61a488c92f60f83bfb3e421f428a44
+  enabled: true
+
+Silverfish:
+  name: Silverfish
+  texture: da91dab8391af5fda54acd2c0b18fbd819b865e1a8f1d623813fa761e924540
+  enabled: true
+
+skeleton:
+  name: skeleton
+  texture: 301268e9c492da1f0d88271cb492a4b302395f515a7bbf77f4a20b95fc02eb2
+  enabled: true
+
+Slime:
+  name: Slime
+  texture: 16ad20fc2d579be250d3db659c832da2b478a73a698b7ea10d18c9162e4d9b5
+  enabled: true
+
+Stray:
+  name: Stray
+  texture: 78ddf76e555dd5c4aa8a0a5fc584520cd63d489c253de969f7f22f85a9a2d56
+  enabled: true
+
+Vex:
+  name: Vex
+  texture: 5e7330c7d5cd8a0a55ab9e95321535ac7ae30fe837c37ea9e53bea7ba2de86b
+  enabled: true
+
+Vindicator:
+  name: Vindicator
+  texture: 6deaec344ab095b48cead7527f7dee61b063ff791f76a8fa76642c8676e2173
+  enabled: true
+
+Witch:
+  name: Witch
+  texture: 20e13d18474fc94ed55aeb7069566e4687d773dac16f4c3f8722fc95bf9f2dfa
+  enabled: true
+
 zombie:
-  name: Zombie
+  name: zombie
   texture: 56fc854bb84cf4b7697297973e02b79bc10698460b51a639c60e5e417734e11
+  enabled: true
+
+Zombie Armorer:
+  name: Zombie Armorer
+  texture: c8679e034767d518660d9416dc5eaf319d697682ac40c886e3c2bc8dfa1de1d
+  enabled: true
+
+Zombie Butcher:
+  name: Zombie Butcher
+  texture: 9cce8d6ce4124cec3e84a852e70f50293f244ddc9ee8578f7d6d8929e16bad69
+  enabled: true
+
+Zombie Cartographer:
+  name: Zombie Cartographer
+  texture: e60800b01012e963e7c20c8ba14b70a0264d146a850deffbca7bfe512f4cb23d
+  enabled: true
+
+Zombie Cleric:
+  name: Zombie Cleric
+  texture: 2958578be0e12172734a78242dab14964abc85ab9b596361f7c5daf8f14a0feb
+  enabled: true
+
+Zombie Farmer:
+  name: Zombie Farmer
+  texture: f77d415f9baa4fa4b5e058f5b81bf7f003b0a2c90a4831e53a7dbc09841c5511
+  enabled: true
+
+Zombie Fisherman:
+  name: Zombie Fisherman
+  texture: 6905d53fe4faeb0b315a6878c9ab81b4be52c31cd478c027f0d7ece9f6da8914
+  enabled: true
+
+Zombie Fletcher:
+  name: Zombie Fletcher
+  texture: 2ea26ac0e25498adada4ecea58bb4e76da32d5ca2de307efe5e4218fb7c5ef89
+  enabled: true
+
+Zombie Leatherworker:
+  name: Zombie Leatherworker
+  texture: fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+  enabled: true
+
+Zombie Librarian:
+  name: Zombie Librarian
+  texture: 62211a1f409cca4249c70d20ca80399fa4844ea417458be988cc21eb4797375e
+  enabled: true
+
+Zombie Mason:
+  name: Zombie Mason
+  texture: fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+  enabled: true
+
+Zombie Nitwit:
+  name: Zombie Nitwit
+  texture: fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+  enabled: true
+
+Zombie Villager:
+  name: Zombie Villager
+  texture: fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+  enabled: true
+
+Zombie Shepherd:
+  name: Zombie Shepherd
+  texture: 691391bef3a46ef267d3b7171086ba4c8d17f2a6b0f83fa2ac30efe914b7c249
+  enabled: true
+
+Zombie Toolsmith:
+  name: Zombie Toolsmith
+  texture: fb552c90f212e855d12255d5cd62ed38b9cd7e30e73f0ea779d1764330e69264
+  enabled: true
+
+Zombie Weaponsmith:
+  name: Zombie Weaponsmith
+  texture: 4370894b5cc305d87aa08c3b4b08587db68ff29e7a3ef354cad6abca50e5528b
+  enabled: true
+
+Wither:
+  name: Wither
+  texture: 964e1c3e315c8d8fffc37985b6681c5bd16a6f97ffd07199e8a05efbef103793
+  enabled: true
+
+Invulnerable Wither:
+  name: Invulnerable Wither
+  texture: ddafb23efc57f251878e5328d11cb0eef87b79c87b254a7ec72296f9363ef7c
+  enabled: true
+
+Invulnerable Wither2:
+  name: Invulnerable Wither
+  texture: 3e4f49535a276aacc4dc84133bfe81be5f2a4799a4c04d9a4ddb72d819ec2b2b
   enabled: true
