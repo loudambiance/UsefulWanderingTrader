@@ -25,49 +25,97 @@ heads:
   enabled: true
   payment: EMERALD
   price: 1 
-  max: 3 
-  min: 1 
+  max: 3
+  min: 1  
   quantity: 3
-  stacksize: 1 
-  extraheads: true 
+  stacksize: 1
+  extraheads: true
+  percentchance: 100
 
 miniblocks:
   enabled: true
-  requireblock: true 
+  requireblock: true
+  payment: EMERALD 
+  price: 1
+  max: 8
+  min: 5 
+  quantity: 1
+  stacksize: 8
+  percentchance: 100
+
+hostileheads:
+  enabled: true
   payment: EMERALD 
   price: 1 
-  max: 8 
-  min: 5 
-  quantity: 1 
-  stacksize: 8 
+  max: 3
+  min: 1 
+  quantity: 3
+  stacksize: 1 
+  percentchance: 100
+
+passiveheads:
+  enabled: true
+  payment: EMERALD
+  price: 1 
+  max: 3
+  min: 1 
+  quantity: 3 
+  stacksize: 1 
+  percentchance: 100 
+
+neutralheads:
+  enabled: true
+  payment: EMERALD 
+  price: 1 
+  max: 3 
+  min: 1 
+  quantity: 3 
+  stacksize: 1 
+  percentchance: 100 
+
+combined:
+  combine: 2
+  max: 3
+  min: 1
+  percentchance: 100
+  quantity: 3
 ```
-The two sections control the settings for playerheads (heads) and the miniblocks.
+The sections control the settings for playerheads (heads) and the miniblocks, hostile mob heads, passive mob heads, neutral mob heads and combined (whether or not to combine mob/player heads).
 
 The settings individually are:  
 |Setting Name|Description|Applies to|
 |---|---|---|
-|enabled|Controls whether or not that type of trade is enabled|Both|
-|payment|What item is used for payment, this must be an exact match to something in the [Spigot Materials list](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)|Both|
-|price|How many of the payment items are required for the trade|Both|
-|max|The maximum number of potential trades that will be added of this type to a single Wandering Trader|Both|
-|min|The minimum number of potential trades that will be added of this type to a single Wandering Trader|Both|
-|quantity|The number of items the Wandering Trader carriers without needing to restock|Both|
-|stacksize|The number of items received in a single trade|Both|
+|enabled|Controls whether or not that type of trade is enabled|all|
+|payment|What item is used for payment, this must be an exact match to something in the [Spigot Materials list](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)|heads|
+|price|How many of the payment items are required for the trade|heads and miniblocks|
+|max|The maximum number of potential trades that will be added of this type to a single Wandering Trader|all|
+|min|The minimum number of potential trades that will be added of this type to a single Wandering Trader|all|
+|quantity|The number of items the Wandering Trader carriers without needing to restock|all|
+|stacksize|The number of items received in a single trade|heads and miniblocks|
 |extraheads|Enable extra heads from the playerheads.yml config file|heads|
 |requireblock|Require a full block as part of the payment to acquire a miniblock|miniblock|
+|combine|Determines if Playerheads, Hostile Mob heads, Passive Mob heads, and Neutral Mob heads are combined|miniblock|
 
 The settings data types:
 |Setting Name|Data type|Applies to|
 |---|---|---|
-|enabled|boolean|Both|
-|payment| [Material](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)|Both|
-|price|integer|Both|
-|max|integer|Both|
-|min|integer|Both|
-|quantity|integer|Both|
-|stacksize|integer|Both|
+|enabled|boolean|all|
+|payment| [Material](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)|heads|
+|price|integer|heads|
+|max|integer|all|
+|min|integer|all|
+|quantity|integer|all|
+|stacksize|integer|heads|
 |extraheads|boolean|heads|
 |requireblock|boolean|miniblock|
+|combine|integer|combine|
+
+The combine setting can be set to:
+|Value|Description|
+|---|---|
+|0|Do not combine any categories|
+|1|Combine player heads, hostile mob heads, neutral mob heads and passive mob heads|
+|2|Combine only hostile mob heads, passive mob heads and neutral mob heads|
 
 ## miniblocks.yml
 This file controls the configuration of each miniblock. You can add any number of additional blocks by adding new blocks in the following format:
