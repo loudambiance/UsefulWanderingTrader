@@ -48,7 +48,7 @@ public class WanderingTraderListener implements Listener
      {
           int price = headsettings.getIntSetting("price");
           int quantity = headsettings.getIntSetting("quantity");
-          int restock = headsettings.getIntSetting("restock");
+          //int restock = headsettings.getIntSetting("restock");
           String payment = headsettings.getStringSetting("payment");
           boolean blockrequired = headsettings.getBooleanSetting("requireblock");
           ArrayList<Head> headslist = headsitem.getRandomHeads();

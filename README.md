@@ -29,7 +29,6 @@ heads:
   min: 1 
   quantity: 3
   stacksize: 1 
-  restock: 0 
   extraheads: true 
 
 miniblocks:
@@ -41,7 +40,6 @@ miniblocks:
   min: 5 
   quantity: 1 
   stacksize: 8 
-  restock: 0 
 ```
 The two sections control the settings for playerheads (heads) and the miniblocks.
 
@@ -55,7 +53,6 @@ The settings individually are:
 |min|The minimum number of potential trades that will be added of this type to a single Wandering Trader|Both|
 |quantity|The number of items the Wandering Trader carriers without needing to restock|Both|
 |stacksize|The number of items received in a single trade|Both|
-|restock|The number of times the Wandering Trader will restock the trade per day|Both|
 |extraheads|Enable extra heads from the playerheads.yml config file|heads|
 |requireblock|Require a full block as part of the payment to acquire a miniblock|miniblock|
 
@@ -69,7 +66,6 @@ The settings data types:
 |min|integer|Both|
 |quantity|integer|Both|
 |stacksize|integer|Both|
-|restock|integer|Both|
 |extraheads|boolean|heads|
 |requireblock|boolean|miniblock|
 
@@ -109,8 +105,8 @@ The settings data types:
 |block_quantity|integer|
 |enabled|boolean|
 
-## playerheads.yml
-This file controls the configuration of extraheads. You can add any number of additional player heads by adding new heads in the following format:
+## playerheads.yml, neutralmobheads.yml, passivemobheads.yml, hostilemobheads.yml
+These files control the configuration of extrahead player heads and mob heads. You can add any number of additional player heads by adding new heads in the following format:
 
 ```
 unique_player_name:
