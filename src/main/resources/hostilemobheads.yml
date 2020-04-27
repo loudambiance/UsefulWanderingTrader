@@ -228,9 +228,9 @@ Invulnerable Wither2:
 Zoglin:
   name: Zoglin
   texture: e67e18602e03035ad68967ce090235d8996663fb9ea47578d3a7ebbc42a5ccf9
-  enabled: false
+  enabled: true
 
 Hoglin:
   name: Hoglin
   texture: 9bb9bc0f01dbd762a08d9e77c08069ed7c95364aa30ca1072208561b730e8d75
-  enabled: false
+  enabled: true
