@@ -424,8 +424,3 @@ Wandering Trader:
   name: Wandering Trader
   texture: 5f1379a82290d7abe1efaabbc70710ff2ec02dd34ade386bc00c930c461cf932
   enabled: true
-
-Strider:
-  name: Strider
-  texture: 18a9adf780ec7dd4625c9c0779052e6a15a451866623511e4c82e9655714b3c1
-  enabled: True

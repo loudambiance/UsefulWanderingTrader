@@ -130,9 +130,9 @@ Wolf:
   texture: e95cbb4f75ea87617f2f713c6d49dac3209ba1bd4b9369654b1459ea15317
   enabled: true
 
-Zombie Piglin:
-  name: Zombie Piglin
-  texture: 7eabaecc5fae5a8a49c8863ff4831aaa284198f1a2398890c765e0a8de18da8c
+Zombie Pigman:
+  name: Zombie Pigman
+  texture: 74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb
   enabled: true
 
 Cave Spider:
@@ -149,8 +149,3 @@ Spider:
   name: Spider
   texture: cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
   enabled: true
-
-Piglin:
-  name: Piglin
-  texture: 11d18bbd0d795b9ac8efaad655e3d0c59fcbb9b964c2a9948ef537f4a3fbbf87
-  enabled: True
