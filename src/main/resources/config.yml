@@ -1,4 +1,4 @@
-heads:
+heads: #test
   enabled: true
   payment: EMERALD # Primary type of payment
   price: 1 # Cost per player head in primary type of payment
