@@ -2219,3 +2219,9 @@ yellow_wool:
   block_quantity: 1
   enabled: true
 
+ancient_debris:
+  name: Ancient Debris
+  texture: change_me
+  block: ANCIENT_DEBRIS
+  block_quantity: 1
+  enabled: true
