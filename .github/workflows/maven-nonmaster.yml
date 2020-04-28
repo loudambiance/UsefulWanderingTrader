@@ -6,10 +6,10 @@ name: Java CI with Maven (Other Branches)
 on:
   push:
     branches:
-      - '!master'
+      - 'mcver/**'
   pull_request:
     branches: 
-      - '!master'
+      - 'mcver/**'
 
 jobs:
   build:
