@@ -1,3 +1,5 @@
+# This project is no longer maintained, more robust plugins exist.
+
 # UsefulWanderingTrader ![MC1.15 Builds](https://github.com/loudambiance/UsefulWanderingTrader/workflows/Java%20CI%20with%20Maven/badge.svg) ![MC1.16 Builds](https://github.com/loudambiance/UsefulWanderingTrader/workflows/Java%20CI%20with%20Maven%20(Other%20Branches)/badge.svg)
 
 Spigot Plugin to reimplement [Vanilla Tweaks Wandering Trades](https://www.vanillatweaks.net/picker/datapacks/) datapack as spigot plugin with additional functionality.
